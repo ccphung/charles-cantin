@@ -1,4 +1,10 @@
-/**navigation menu**/
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* -------- Navigation Component --------- */
+
 .navbar-menu {
     font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
@@ -6,27 +12,129 @@
     font-size: 1.5em;
 }
 
+
 .navbar-menu a {
     color : #EE8624;
 }
 
+.navbar-menu a:hover{
+    color : white;
+}
+
+/* ---------- Home page ----------- */
+
 /* Title */
 .title {
     font-family: 'Lustria', serif;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
-/* media queries */
-@media (max-width: 850px){
-    .navbar-menu {
-        visibility: visible;
+.clickable-text{
+    border : 1px solid white;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color:white;
+    bottom: 10%;
+    font-size: 1.3em;
+    font-family: 'Catamaran', sans-serif;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.clickable-text:hover{
+    background-color: #EE8624;
+    font-size: 1.4em;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.socials{
+    margin-top: 50px ;
+    bottom: 35%;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.socials img {
+    padding: 2px;
+}
+
+.socials:hover{
+    cursor: pointer;
+}
+
+.spin {
+    font-size: 1.4em;
+    color : #EE8624;
+    font-family: 'Catamaran', sans-serif;
+    padding: 5px;
+    text-transform: uppercase;
+
+}
+
+
+.spin:after {
+    content:"";
+    animation: spin 6s infinite ease-in-out;
+}
+
+@keyframes spin{
+    0% {
+        content: "mariage";
     }
+
+    40% {
+        content: "portrait";
+    }
+
+    60% {
+        content: "grossesse";
+    }
+
+    80% {
+        content: "couple"
+    }
+
+    100% {
+        content: "bébés"
+    }
+}
+
+
+/* background picture */
+.home-background {
+    background-image: url("../public/images/Background/hisu-lee-FTW8ADj5igs-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #3F3D3B;
+    background-blend-mode: multiply;
+}
+
+/* ------ Media Queries ------- */
+
+@media (max-width: 1024px){
     .navbar-menu a {
-        color : #EE8624;
         font-family: 'Catamaran', sans-serif;
         text-transform: uppercase;
     }
-    .logo {
-        max-width: 80px;
-        max-height: 80px;
+    .logo{
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .clickable-text{
+        visibility: hidden;
+    }
+
+    .socials{
+        bottom: 5%;
     }
 } 
+

@@ -1,6 +1,7 @@
 import './globals.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import ImportBsJS from "../components/importBsJS";
+import Nav from '@/components/Nav';
 
 export const metadata = {
     title: "Charles Cantin Photographe",
@@ -15,10 +16,11 @@ const Rootlayout = ({children}) => {
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lustria&display=swap" rel="stylesheet"/>
       </head>
-        <body>
+        <body className='home-background'>
           <ImportBsJS />
+          <Nav/>
           <main>
-              {children}
+            {children}
           </main>
         </body>
 

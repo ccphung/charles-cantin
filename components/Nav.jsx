@@ -3,17 +3,17 @@ import Image from "next/image";
 const Nav = () => {
   return (
     <>
-<div className="d-flex justify-content-between">
    {/* Logo */}
+    <div className="d-flex justify-content-between p-3">
       <Image
-      src="/images/logo/logo.png"
-      height="100"
-      width="100"
-      className="p-2 logo"
-      />
+        src="/images/logo/logo.png"
+        height="150"
+        width="150"
+        className="p-4 logo "
+        />
 
     {/* Bootstrap navbar */}
-      <nav class="navbar navbar-expand-lg navbar-menu p-5">
+      <nav class="navbar navbar-expand-lg navbar-menu">
         <div class="container-fluid d-flex justify-content-end">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"    aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@ const Nav = () => {
               </div>
           </div>
       </nav>
-  </div>
+    </div>
   </>
   )
 }
