@@ -1,4 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/**navigation menu**/
+.navbar-menu {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5em;
+}
 
+.navbar-menu a {
+    color : #EE8624;
+}
+
+@media (max-width: 850px){
+    .navbar-menu {
+        visibility: visible;
+    }
+    .navbar-menu a {
+        color : #EE8624;
+        font-family: 'Catamaran', sans-serif;
+        text-transform: uppercase;
+    }
+
+} 
+
+/* Title */
+.title {
+    font-family: 'Lustria', serif;
+}
