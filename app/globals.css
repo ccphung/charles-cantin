@@ -10,6 +10,12 @@
     color : #EE8624;
 }
 
+/* Title */
+.title {
+    font-family: 'Lustria', serif;
+}
+
+/* media queries */
 @media (max-width: 850px){
     .navbar-menu {
         visibility: visible;
@@ -19,10 +25,8 @@
         font-family: 'Catamaran', sans-serif;
         text-transform: uppercase;
     }
-
+    .logo {
+        max-width: 80px;
+        max-height: 80px;
+    }
 } 
-
-/* Title */
-.title {
-    font-family: 'Lustria', serif;
-}
