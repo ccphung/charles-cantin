@@ -1,12 +1,13 @@
 import Image from "next/image"
 import './tarif.css'
+import Link from "next/link"
 
 const page = () => {
   return (<>
      <header>
         <div className="photo-header-container">
             <Image
-                src="/images/logo/logo.png"
+                src="/images/bapteme/walter-gadea-ZesabV4krEE-unsplash.jpg"
                 width={200}
                 height={150}
             />
@@ -41,7 +42,7 @@ const page = () => {
                 height={150}
             />
             <Image
-                src="/images/bapteme/walter-gadea-ZesabV4krEE-unsplash.jpg"
+                src="/images/logo/logo.png"
                 width={200}
                 height={150}
             />
@@ -49,51 +50,88 @@ const page = () => {
     </header>
     <main>
         <div className="title-container">
-            <h1>Séance photo : Tarifs et prestations</h1>
+            <h2>Séance photo : Tarifs et prestations</h2>
         </div>
 
+        <section className="row">
+
+            {/* Portrait */}
+            <div className="col-md-6 col-sm-12 col-lg-4">
+                <div class="card m-3">
+                    <img class="card-img-top" src="/images/portrait/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt="Card image cap"/>
+                    <div class="card-body">
+                        <h5 class="card-title">«Juste moi » <span className="colored-text">130 euros</span> </h5>
+                        <p class="card-text">Séance pour une personne, en extérieur ou en studio</p>
+                        <Link href="\contact"><button className="btn">Nous contacter</button></Link>
+                    </div>
+                </div>
+            </div>
+
+
+            {/* Couple */}
+            <div className="col-md-6 col-sm-12 col-lg-4">
+                <div class="card m-3">
+                    <img class="card-img-top" src="/images/couple/candice-picard-vLENm-coX5Y-unsplash.jpg" alt="Card image cap"/>
+                    <div class="card-body">
+                        <h5 class="card-title">« Pour deux »<span className="colored-text">195 euros</span></h5>
+                        <p class="card-text">Pour deux personnes, en extérieur ou en studio</p>
+                        <Link href="\contact"><button className="btn">Nous contacter</button></Link>
+                    </div>
+                </div>
+            </div>
+
+
+            {/* Family */}
+            <div className="col-md-6 col-sm-12 col-lg-4">
+                <div class="card m-3">
+                    <img class="card-img-top" src="/images/famille/kadyn-pierce-L203i9Xi_XE-unsplash.jpg" alt="Card image cap"/>
+                    <div class="card-body">
+                        <h5 class="card-title">« Famille » <span className="colored-text">220 euros</span></h5>
+                        <p class="card-text">Pour la famille ou les amis jusqu’à 4 personnes, en extérieur ou en studio
+                            0 euros en supplément par personne au-delà de 4 (hormis enfant jusqu’à 2 ans)</p>
+                        <Link href="\contact"><button className="btn">Nous contacter</button></Link>
+                    </div>
+                </div>
+            </div>
+                        
+            {/* Pregnancy */}
+            <div className="col-md-6 col-sm-12 col-lg-4">
+                <div class="card m-3">
+                    <img class="card-img-top" src="/images/grossesse/kelly-sikkema-IE8KfewAp-w-unsplash.jpg" alt="Card image cap"/>
+                    <div class="card-body">
+                        <h5 class="card-title">« Il était une fois » <span className="colored-text">160 euros</span></h5>
+                        <p class="card-text">Photo de grossesse (À votre domicile, en extérieur ou en studio)</p>
+                        <Link href="\contact"><button className="btn">Nous contacter</button></Link>
+                    </div>
+                </div>
+            </div>
+
+            {/* Baby */}
+            <div className="col-md-6 col-sm-12 col-lg-4">
+                <div class="card m-3">
+                    <img class="card-img-top" src="/images/bebes/yuri-tasso-RjCs9ywcnz8-unsplash.jpg" alt="Card image cap"/>
+                    <div class="card-body">
+                        <h5 class="card-title">« Mon bébé » <span className="colored-text">100 euros</span></h5>
+                        <p class="card-text">Photo d’enfant jusqu’à 3 ans (photo à domicile)</p>
+                        <Link href="\contact"><button className="btn">Nous contacter</button></Link>
+                    </div>
+                </div>
+            </div>
+
+            {/* Evenement */}
+            <div className="col-md-6 col-sm-12 col-lg-4">
+                <div class="card m-3">
+                    <img class="card-img-top" src="/images/bapteme/josh-applegate-mjn1LcoU1Cw-unsplash.jpg" alt="Card image cap"/>
+                    <div class="card-body">
+                        <h5 class="card-title">« J’immortalise l’événement » <span className="colored-text">sur mesure</span></h5>
+                        <p class="card-text">Prestation de mariage ou baptême sur devis</p>
+                        <Link href="\contact"><button className="btn">Nous contacter</button></Link>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-
-    <div>
-        <ul>
-            <li>
-                <h3>«Juste moi » 130 euros </h3>
-                <p>Séance pour une personne, en extérieur ou en studio</p>
-            </li>
-
-            <li>
-                <div>« Pour deux » 195 euros</div>
-                <p>Pour deux personnes, en extérieur ou en studio</p>
-            </li>
-
-            <li>
-                <div>« Famille » 220 euros </div>
-                <p>Pour la famille ou les amis jusqu’à 4 personnes, en extérieur ou en studio
-                0 euros en supplément par personne au-delà de 4 (hormis enfant jusqu’à 2 ans)</p>
-            </li>
-            <li>
-                <div>« Il était une fois » 160 euros</div>
-                 <p>Photo de grossesse (À votre domicile, en extérieur ou en studio)</p>
-            </li>
-
-            <li>
-            <Image
-                    src="/images/bebes/jonathan-borba-CgWTqYxHEkg-unsplash.jpg"
-                    width={400}
-                    height={300}
-                />
-                <div>« Mon bébé » 100 euros</div>
-                 <p>Photo d’enfant jusqu’à 3 ans (photo à domicile)</p>
-            </li>
-
-            <li>
-                <div>«Juste moi » 130 euros </div>
-                 <p>Séance pour une personne, en extérieur ou en studio</p>
-            </li>
-
-        </ul>
-    </div>
     </>
   )
 }

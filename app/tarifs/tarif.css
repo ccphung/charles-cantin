@@ -18,5 +18,31 @@ header {
 .title-container {
     display:flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px;
+    color:#a47630;
+}
+
+article{
+    display:flex;
+}
+
+.colored-text{
+    color:#a47630;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.btn {
+    background-color: #a47630;
+    color: white;
+}
+
+.btn:hover {
+    background: white;
+    color: #a47630;
 }
