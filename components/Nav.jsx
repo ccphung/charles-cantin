@@ -1,17 +1,22 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Nav = () => {
   return (
     <>
    {/* Logo */}
+
     <div className="d-flex justify-content-between p-3 nav-index">
+    
+    <Link href="/" className="logo-link">
       <Image
         src="/images/logo/logo.png"
         height="150"
         width="150"
         className="p-4 logo "
-        />
-
+        /> 
+    </Link>
+    
     {/* Bootstrap navbar */}
       <nav class="navbar navbar-expand-lg navbar-menu nav-index">
         <div class="container-fluid d-flex justify-content-end">
@@ -22,22 +27,22 @@ const Nav = () => {
               <ul class="navbar-nav">
                 <div class="d-flex justify-content-end">
                   <li class="nav-item">
-                  <a class="nav-link" href="#">Accueil</a>
+                  <Link className="link-nav" href="/">Accueil</Link>
                 </li>
                 </div>
                 <div class="d-flex justify-content-end">
                   <li class="nav-item">
-                  <a class="nav-link" href="#">Galerie</a>
+                  <Link className="link-nav" href="/galerie">Galerie</Link>
                 </li>
                 </div>
                 <div class="d-flex justify-content-end">
                   <li class="nav-item">
-                  <a class="nav-link" href="#">Tarifs</a>
+                  <Link className="link-nav" href="/tarifs">Tarifs</Link>
                 </li>
                 </div>
                 <div class="d-flex justify-content-end">
                   <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <Link className="link-nav" href="/contact">Contact</Link>
                 </li>
                 </div>
               </ul>

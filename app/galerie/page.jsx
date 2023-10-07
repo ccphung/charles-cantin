@@ -18,6 +18,7 @@ const page = () => {
         <h2>Galerie</h2>
         <p>Découvrez quelques unes de mes photographies.</p>
     </div>
+    
     <div className="button-wrapper">
       <CategoryButton name="tout" handleClick={setCat}/>
       <CategoryButton name="bébé" handleClick={setCat}/>

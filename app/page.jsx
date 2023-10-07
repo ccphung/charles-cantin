@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const Home = () => {
   return (
@@ -27,7 +28,9 @@ const Home = () => {
             alt="instagram logo"
           />
       </div>
-      <div className="clickable-text text-center">Découvrir</div>
+      <Link href="/galerie">
+        <div className="clickable-text text-center">Découvrir</div>
+      </Link>
     </section>
   </>
   )

@@ -1,10 +1,13 @@
+/* ----- Text ------*/
+
 .title-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+
 }
 
+/*title*/
 h2 {
     color: #976212;
     font-size: 3em;
@@ -12,10 +15,12 @@ h2 {
     font-family: 'Catamaran', sans-serif;
 }
 
+/*text "Découvrez..."*/
 p {
     font-size: 1.5em;
 }
 
+/* ---- Buttons ---- */
 .button-wrapper {
     display: flex;
     justify-content: center;
@@ -38,6 +43,8 @@ p {
     border: 0px;
 }
 
+
+/* ---- media queries ---- */
 @media screen and (max-width:1024px)
 {
     .button-wrapper {

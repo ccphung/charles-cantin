@@ -1,0 +1,22 @@
+.photo-header-container{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+@media screen and (max-width:1024px){
+    header{
+        display:none;
+    }
+}
+
+.title-container {
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}

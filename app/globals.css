@@ -6,23 +6,32 @@
 .navbar-menu {
     font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1em;
 }
 
-
-.navbar-menu a {
-    color : #976212;
+.logo-link {
+    z-index: 100;
 }
 
-.navbar-menu a:hover{
+.link-nav {
+    list-style: none;
+    text-decoration: none;
+    color : #a47630;
+    margin: 9px;
+    letter-spacing: 3px;
+}
+
+.link-nav:hover{
     color : white;
-    background:#976212;
+    background:#a47630;
 }
 
 /* ---------- Home page ----------- */
 
 /* Title */
+
+
 .title {
     font-family: 'Lustria', serif;
     color:white;
@@ -31,8 +40,15 @@
     left:50%;
     transform: translate(-50%, -50%);
     animation: fadein 4s ease-in-out;
+    font-size: 3.5em;
 }
 
+/* Logo */ 
+.logo-container{
+    display:block;
+}
+
+/* Text "Découvrir" */
 .clickable-text{
     border : 1px solid white;
     left:50%;
@@ -47,12 +63,12 @@
 }
 
 .clickable-text:hover{
-    background-color: #976212;
+    background-color: #a47630;
     transition: 0.2s ease-in-out;
     cursor: pointer;
     border: 0px;
 }
-
+ /* Facebook & Instagram icons*/
 .socials{
     margin-top: 50px ;
     bottom: 25%;
@@ -69,16 +85,17 @@
     cursor: pointer;
 }
 
+
 .dynamic-text {
     font-size: 1.8em;
-    color : #976212;
+    color : #a47630;
     font-family: 'Catamaran', sans-serif;
     padding: 5px;
     text-transform: uppercase;
     animation: fadeout 3s infinite;
     position: absolute;
     top: 60%;
-    left:55%;
+    left:53%;
     transform: translate(-50%, -50%);
 }
 
@@ -95,6 +112,7 @@
     top: 60%;
     left:43%;
     transform: translate(-50%, -50%);
+    font-size: 1.5em;
 }
 
 /* Animation */ 
@@ -166,8 +184,8 @@
 
 /* ------ Media Queries ------- */
 
-@media (max-width: 1024px){
-    .navbar-menu a {
+@media (max-width: 1200px){
+    .link-nav {
         font-family: 'Catamaran', sans-serif;
         text-transform: uppercase;
     }
