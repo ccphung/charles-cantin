@@ -1,71 +1,43 @@
 "use client"
-import Image from "next/image";
-import { useState } from "react";
-
-
+import Data from "@/components/Data"
+import { useEffect, useState } from "react";
+import CategoryButton from "@/components/CategoryButton";
+import './galerie.css'
 
 const page = () => {
-    // [wedding, setWedding] = useState(true)
+    const[cat, setCat] = useState('tout');
+    const[filteredData, setFilteredData] = useState([]);
 
-    // const handleClick = () => {
-    //     setWedding=false;
-    // }
-
-
+    useEffect(() => {
+        cat === 'tout' ? setFilteredData(Data) : setFilteredData(Data.filter(val => val.category === cat))
+    },[cat])
 
   return (
-    <>
-    <div class="row m-5">
-        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <div className="image-size-landscape">
-                <Image 
-                    src={'/images/mariage/alvaro-cvg-mW8IZdX7n8E-unsplash.jpg'}
-                    fill
-                    alt="wedding picture"
-                />
-            </div>
-            <div className="image-size-portrait">
-                <Image 
-                    src={'/images/mariage/ed-robertson-sqLVUTFtxVs-unsplash.jpg'}
-                    fill
-                    alt="wedding picture"
-                />
-            </div>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-            <div className="image-size-portrait">
-                <Image 
-                    src={'/images/mariage/jakob-owens-jbaF5N0uO0k-unsplash.jpg'}
-                    fill
-                    alt="wedding picture"
-                    />
-            </div>
-            <div className="image-size-portrait">
-                <Image 
-                    src={'/images/mariage/fabio-alves-BpeTaQozgN4-unsplash.jpg'}
-                    fill
-                    alt="wedding picture"
-                />
-            </div>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-            <div className="image-size-landscape">
-                <Image 
-                    src={'/images/mariage/foto-pettine-IfjHaIoAoqE-unsplash.jpg'}
-                    fill
-                    alt="wedding picture"
-                />
-        </div>
-            <div className="image-size-landscape">
-                <Image  
-                    src={'/images/mariage/eugenivy_now-1Bs2sZ9fD2Q-unsplash.jpg'}
-                    fill
-                    alt="wedding picture"
-                />
-            </div>
-        </div>
+  <>
+    <div className="title-wrapper">
+        <h2>Galerie</h2>
+        <p>Découvrez quelques unes de mes photographies.</p>
+    </div>
+    <div className="button-wrapper">
+      <CategoryButton name="tout" handleClick={setCat}/>
+      <CategoryButton name="bébé" handleClick={setCat}/>
+      <CategoryButton name="mariage" handleClick={setCat}/>
+      <CategoryButton name="portrait" handleClick={setCat}/>
+      <CategoryButton name="baptème" handleClick={setCat}/>
+      <CategoryButton name="couple" handleClick={setCat}/>
+      <CategoryButton name="famille" handleClick={setCat}/>
+    </div>
+
+    <div className="container">
+      <div className="row">
+          {filteredData.map(Data =>     
+            <div key={Data.id} className=" justify-content-center col-lg-3 col-md-4 col-sm-6 card border-0 m-4">
+                <img src={Data.img}/>
+            </div>)}.
+      </div>
     </div>
     </>
   )
-  }
+}
+
 export default page

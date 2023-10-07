@@ -12,12 +12,12 @@
 
 
 .navbar-menu a {
-    color : #EE8624;
+    color : #976212;
 }
 
 .navbar-menu a:hover{
     color : white;
-    background: #EE8624;
+    background:#976212;
 }
 
 /* ---------- Home page ----------- */
@@ -47,7 +47,7 @@
 }
 
 .clickable-text:hover{
-    background-color: #EE8624;
+    background-color: #976212;
     transition: 0.2s ease-in-out;
     cursor: pointer;
     border: 0px;
@@ -71,7 +71,7 @@
 
 .dynamic-text {
     font-size: 1.8em;
-    color : #EE8624;
+    color : #976212;
     font-family: 'Catamaran', sans-serif;
     padding: 5px;
     text-transform: uppercase;
@@ -147,7 +147,6 @@
     }
     
 }
-
 
 
 /* background picture */

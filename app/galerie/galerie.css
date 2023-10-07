@@ -1,0 +1,48 @@
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #976212;
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-wrapper button {
+    margin: 20px;
+    border-radius: 20px;
+    padding: 9px;
+    letter-spacing: 4px;
+    font-family: 'Catamaran', sans-serif;
+    border : 1px #976212 solid;
+}
+
+.button-wrapper button:hover {
+    background:#976212;
+    color: white;
+    transition: 0.3s ease-in-out;
+    border: 0px;
+}
+
+@media screen and (max-width:1024px)
+{
+    .button-wrapper {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
