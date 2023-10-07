@@ -16,7 +16,7 @@ const Rootlayout = ({children}) => {
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lustria&display=swap" rel="stylesheet"/>
       </head>
-        <body className='home-background'>
+        <body>
           <ImportBsJS />
           <Nav/>
           <main>

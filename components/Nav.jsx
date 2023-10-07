@@ -4,7 +4,7 @@ const Nav = () => {
   return (
     <>
    {/* Logo */}
-    <div className="d-flex justify-content-between p-3">
+    <div className="d-flex justify-content-between p-3 nav-index">
       <Image
         src="/images/logo/logo.png"
         height="150"
@@ -13,7 +13,7 @@ const Nav = () => {
         />
 
     {/* Bootstrap navbar */}
-      <nav class="navbar navbar-expand-lg navbar-menu">
+      <nav class="navbar navbar-expand-lg navbar-menu nav-index">
         <div class="container-fluid d-flex justify-content-end">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"    aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

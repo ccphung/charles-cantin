@@ -1,15 +1,13 @@
-body {
-    width: 100vw;
-    height: 100vh;
-}
-
 /* -------- Navigation Component --------- */
+.nav-index, img{
+    z-index:10;
+}
 
 .navbar-menu {
     font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 
@@ -19,6 +17,7 @@ body {
 
 .navbar-menu a:hover{
     color : white;
+    background: #EE8624;
 }
 
 /* ---------- Home page ----------- */
@@ -31,6 +30,7 @@ body {
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
+    animation: fadein 4s ease-in-out;
 }
 
 .clickable-text{
@@ -40,7 +40,7 @@ body {
     position: absolute;
     color:white;
     bottom: 10%;
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: 'Catamaran', sans-serif;
     padding: 5px;
     text-transform: uppercase;
@@ -48,14 +48,14 @@ body {
 
 .clickable-text:hover{
     background-color: #EE8624;
-    font-size: 1.4em;
     transition: 0.2s ease-in-out;
     cursor: pointer;
+    border: 0px;
 }
 
 .socials{
     margin-top: 50px ;
-    bottom: 35%;
+    bottom: 25%;
     position: absolute;
     left:50%;
     transform: translate(-50%, -50%);
@@ -69,42 +69,85 @@ body {
     cursor: pointer;
 }
 
-.spin {
-    font-size: 1.4em;
+.dynamic-text {
+    font-size: 1.8em;
     color : #EE8624;
     font-family: 'Catamaran', sans-serif;
     padding: 5px;
     text-transform: uppercase;
-
+    animation: fadeout 3s infinite;
+    position: absolute;
+    top: 60%;
+    left:55%;
+    transform: translate(-50%, -50%);
 }
 
-
-.spin:after {
+.dynamic-text:after {
     content:"";
-    animation: spin 6s infinite ease-in-out;
+    animation: spin 15s infinite;
+
 }
+
+.static-text {
+    font-family: 'Lustria', serif;
+    color:white;
+    position: absolute;
+    top: 60%;
+    left:43%;
+    transform: translate(-50%, -50%);
+}
+
+/* Animation */ 
 
 @keyframes spin{
-    0% {
-        content: "mariage";
-    }
 
-    40% {
+    10% {
         content: "portrait";
     }
+    30% {
+        content: "bébé"
+    }
+    50% {
+        content: "mariage"
+    }
+    70% {
+        content: "couple"
+    }
+    90% {
+        content: "famille"
+    }
+    100% {
+        content: ""
+    }
+}
 
-    60% {
-        content: "grossesse";
+@keyframes fadeout {
+    0%{
+        opacity: 00%;
     }
 
-    80% {
-        content: "couple"
+    30%{
+        opacity: 100%;
     }
 
     100% {
-        content: "bébés"
+        opacity: 0%;
     }
+    
 }
+
+
+@keyframes fadein {
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+    
+}
+
 
 
 /* background picture */
@@ -115,6 +158,11 @@ body {
     background-repeat: no-repeat;
     background-color: #3F3D3B;
     background-blend-mode: multiply;
+    position: absolute;
+    top:0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
 }
 
 /* ------ Media Queries ------- */
@@ -124,10 +172,6 @@ body {
         font-family: 'Catamaran', sans-serif;
         text-transform: uppercase;
     }
-    .logo{
-        max-width: 120px;
-        max-height: 120px;
-    }
 
     .clickable-text{
         visibility: hidden;
@@ -136,5 +180,30 @@ body {
     .socials{
         bottom: 5%;
     }
+
+    .dynamic-text {
+        visibility: hidden;
+    }
+
+    .static-text {
+        left:50%
+    }
 } 
 
+/* ----- Galerie Page ------*/
+
+.image-size-landscape {
+    position : relative;
+    max-width:500px;
+    width:100%;
+    aspect-ratio: 70/45;
+    margin-bottom: 20px;
+}
+
+.image-size-portrait {
+    position : relative;
+    max-width:500px;
+    width:100%;
+    aspect-ratio: 45/70;
+    margin-bottom: 20px;
+}
