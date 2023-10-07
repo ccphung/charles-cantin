@@ -371,11 +371,6 @@ const Data =
             img: '/images/portrait/imansyah-muhamad-putera-n4KewLKFOZw-unsplash.jpg'
         },
         {
-            id:63,
-            title:"portrait",
-            category:"portrait",
-            img: '/images/portrait/toa-heftiba-C-8uOz7GluA-unsplash.jpg'
-        },        {
             id:64,
             title:"portrait",
             category:"portrait",
