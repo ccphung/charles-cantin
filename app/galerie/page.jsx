@@ -1,12 +1,14 @@
 "use client"
 import Data from "@/components/Data"
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import CategoryButton from "@/components/CategoryButton";
 import './galerie.css'
 
+
 const page = () => {
-    const[cat, setCat] = useState('tout');
-    const[filteredData, setFilteredData] = useState([]);
+
+    const [cat, setCat] = useState('tout');
+    const [filteredData, setFilteredData] = useState([]);
 
     useEffect(() => {
         cat === 'tout' ? setFilteredData(Data) : setFilteredData(Data.filter(val => val.category === cat))
@@ -19,6 +21,7 @@ const page = () => {
         <p>Découvrez quelques unes de mes photographies.</p>
     </div>
     
+    {/* Buttons */}
     <div className="button-wrapper">
       <CategoryButton name="tout" handleClick={setCat}/>
       <CategoryButton name="bébé" handleClick={setCat}/>
@@ -30,6 +33,7 @@ const page = () => {
       <CategoryButton name="grossesse" handleClick={setCat}/>
     </div>
 
+    {/* Pictures */}
     <div className="container-fluid">
       <div className="row m-5">
           {filteredData.map(Data =>     
