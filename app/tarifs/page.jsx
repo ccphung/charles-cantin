@@ -73,7 +73,7 @@ const page = () => {
                 <div class="card m-3">
                     <img class="card-img-top" src="/images/couple/candice-picard-vLENm-coX5Y-unsplash.jpg" alt="Card image cap"/>
                     <div class="card-body">
-                        <h5 class="card-title">« Pour deux »<span className="colored-text">195 euros</span></h5>
+                        <h5 class="card-title">« Pour deux »<span className="colored-text"> 195 euros</span></h5>
                         <p class="card-text">Pour deux personnes, en extérieur ou en studio</p>
                         <Link href="\contact"><button className="btn">Nous contacter</button></Link>
                     </div>
