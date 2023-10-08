@@ -71,7 +71,7 @@
  /* Facebook & Instagram icons*/
 .socials{
     margin-top: 50px ;
-    bottom: 25%;
+    bottom: 20%;
     position: absolute;
     left:50%;
     transform: translate(-50%, -50%);
@@ -85,7 +85,13 @@
     cursor: pointer;
 }
 
+.spin-wrapper {
+    position: absolute;
+    top: 60%;
+    left:42%;
+}
 
+/* Dynamic and static text "Photographe Mariage"*/
 .dynamic-text {
     font-size: 1.8em;
     color : #a47630;
@@ -93,9 +99,6 @@
     padding: 5px;
     text-transform: uppercase;
     animation: fadeout 3s infinite;
-    position: absolute;
-    top: 60%;
-    left:53%;
     transform: translate(-50%, -50%);
 }
 
@@ -108,9 +111,6 @@
 .static-text {
     font-family: 'Lustria', serif;
     color:white;
-    position: absolute;
-    top: 60%;
-    left:43%;
     transform: translate(-50%, -50%);
     font-size: 1.5em;
 }
@@ -206,21 +206,3 @@
         left:50%
     }
 } 
-
-/* ----- Galerie Page ------*/
-
-.image-size-landscape {
-    position : relative;
-    max-width:500px;
-    width:100%;
-    aspect-ratio: 70/45;
-    margin-bottom: 20px;
-}
-
-.image-size-portrait {
-    position : relative;
-    max-width:500px;
-    width:100%;
-    aspect-ratio: 45/70;
-    margin-bottom: 20px;
-}

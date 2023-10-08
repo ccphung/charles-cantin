@@ -45,7 +45,7 @@ p {
 
 
 /* ---- media queries ---- */
-@media screen and (max-width:1024px)
+@media screen and (max-width:1200px)
 {
     .button-wrapper {
         display: block;
