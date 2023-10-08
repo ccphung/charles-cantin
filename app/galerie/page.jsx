@@ -27,14 +27,15 @@ const page = () => {
       <CategoryButton name="baptème" handleClick={setCat}/>
       <CategoryButton name="couple" handleClick={setCat}/>
       <CategoryButton name="famille" handleClick={setCat}/>
+      <CategoryButton name="grossesse" handleClick={setCat}/>
     </div>
 
-    <div className="container">
-      <div className="row">
+    <div className="container-fluid">
+      <div className="row m-5">
           {filteredData.map(Data =>     
-            <div key={Data.id} className=" justify-content-center col-lg-3 col-md-4 col-sm-6 card border-0 m-4">
-                <img src={Data.img}/>
-            </div>)}.
+            <div key={Data.id} className="d-flex justify-content-md-center col-lg-4 mx-auto col-md-5 col-sm-6 card border-0 m-4">
+                <img src={Data.img} className="w-100"/>
+            </div>)}
       </div>
     </div>
     </>
