@@ -26,7 +26,6 @@ const contact = () => {
   const [requiredPlace, setRequiredPlace] = useState(false)
   const [requiredOcc, setRequiredOcc] = useState(false)
   const [filteredEvent, setFilteredEvent] = useState([]);
-  
 
 /* Display the option menu and add require */
   useEffect(() => {
@@ -98,8 +97,8 @@ const contact = () => {
                   <select class="form-select" name="place-option" id="place-option" required={requiredPlace} onChange={handlePlaceChange}>
                   <option value="" selected>Choisir le lieu...</option>
                       {filteredEvent.map(Events =>     
-                        <option key={Events.id} className="d-flex justify-content-md-center col-lg-4 mx-auto col-md-5 col-sm-6 card border-0 m-4">
-                          <option>{Events.lieu}</option> 
+                        <option key={Events.id}>
+                          {Events.lieu}
                         </option>)}
                   </select>
                 </div>
@@ -107,11 +106,10 @@ const contact = () => {
                 {/* Select occasion */}
                 <div class="form-outline mb-3" style={{display:displayOccOption}}>
                   <select class="form-select" name="event-option" id="event-option" required={requiredOcc} onChange={handleEventChange}>
-                  <option value="" selected>Choisir l'événement</option>
-                  {filteredEvent.map(Events =>     
-                        <option key={Events.id} className="d-flex justify-content-md-center col-lg-4 mx-auto col-md-5 col-sm-6 card border-0 m-4">
-                          <option>{Events.lieu}</option> 
-                        </option>)}
+                    <option value="" selected>Choisir l'événement</option>
+                    {filteredEvent.map(Events => <div key={Events.id}>
+                    {Events.lieu}
+                    </div>)}
                   </select>
                 </div>
 
@@ -141,6 +139,7 @@ const contact = () => {
         </div>
     </div>
 </div>
+
 </>
   )
 }
