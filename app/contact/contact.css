@@ -1,0 +1,34 @@
+/* Title */
+h2, .recap-text, .selected-option{
+    color: #a47630;
+    font-family: 'Lustria', serif;
+    font-weight: bold;
+}
+
+
+/* Form */
+form {
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* Buttons */
+.btn {
+    background-color: #a47630;
+    color: white;
+}
+
+.btn:hover {
+    background: white;
+    color: #a47630;
+}
+
+
+/* Media Queries */ 
+@media screen and (max-width: 1024px){
+    .picture {
+        display:none;
+    }
+};
+    
+
+
