@@ -10,6 +10,7 @@ const page = () => {
     const [cat, setCat] = useState('tout');
     const [filteredData, setFilteredData] = useState([]);
 
+    /* UseEffect to filter the data */
     useEffect(() => {
         cat === 'tout' ? setFilteredData(Data) : setFilteredData(Data.filter(val => val.category === cat))
     },[cat])
