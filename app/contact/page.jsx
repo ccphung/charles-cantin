@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react"
 import './contact.css'
 import Image from "next/image"
+import Events from "@/components/Events"
 
 const contact = () => {
 
@@ -24,10 +25,8 @@ const contact = () => {
   const [displayOccOption, setDisplayOccOption] = useState('none')
   const [requiredPlace, setRequiredPlace] = useState(false)
   const [requiredOcc, setRequiredOcc] = useState(false)
-  const [displayHome, setDisplayHome] = useState('none')
-  const [displayOutside, setDisplayOutside] = useState('none')
-  const [displayStudio, setDisplayStudio] = useState('none')
-
+  const [filteredEvent, setFilteredEvent] = useState([]);
+  
 
 /* Display the option menu and add require */
   useEffect(() => {
@@ -46,35 +45,9 @@ const contact = () => {
     },[selectedOption]
     )
 
-/* Baby option */
-  useEffect(() => {
-      if(selectedOption === "bébé"){
-        setDisplayHome('block')
-        setDisplayStudio('none')
-        setDisplayOutside('none')
-     }
-    },[selectedOption]
-    )
-
-  /* couple, portrait and family option*/
-  useEffect(() => {
-      if(selectedOption === "couple" || selectedOption === "portrait" || selectedOption === "famille"){
-        setDisplayHome('none')
-        setDisplayStudio('block')
-        setDisplayOutside('block')
-      }
-    },[selectedOption]
-    )
-
-  /* pregnancy option*/
-  useEffect(() => {
-    if(selectedOption === "grossesse") {
-      setDisplayStudio('block')
-      setDisplayHome('block')
-      setDisplayOutside('block')
-    }
-  },[selectedOption]
-  )
+    useEffect(() => {
+      setFilteredEvent(Events.filter(val => val.category === selectedOption))
+    ,[selectedOption]})
 
   return (<>
   <div className="d-flex justify-content-center mx-auto">
@@ -124,9 +97,10 @@ const contact = () => {
                 <div class="form-outline mb-3" style={{display:displayPlaceOption}}>
                   <select class="form-select" name="place-option" id="place-option" required={requiredPlace} onChange={handlePlaceChange}>
                   <option value="" selected>Choisir le lieu...</option>
-                  <option value="extérieur" style={{display:displayOutside}}>En extérieur</option>
-                  <option value="studio" style={{display:displayStudio}}>En studio</option>
-                  <option value="domicile" style={{display:displayHome}}>A votre domicile</option>
+                      {filteredEvent.map(Events =>     
+                        <option key={Events.id} className="d-flex justify-content-md-center col-lg-4 mx-auto col-md-5 col-sm-6 card border-0 m-4">
+                          <option>{Events.lieu}</option> 
+                        </option>)}
                   </select>
                 </div>
 
@@ -134,8 +108,10 @@ const contact = () => {
                 <div class="form-outline mb-3" style={{display:displayOccOption}}>
                   <select class="form-select" name="event-option" id="event-option" required={requiredOcc} onChange={handleEventChange}>
                   <option value="" selected>Choisir l'événement</option>
-                  <option value="mariage">Mariage</option>
-                  <option value="baptème">Baptème</option>
+                  {filteredEvent.map(Events =>     
+                        <option key={Events.id} className="d-flex justify-content-md-center col-lg-4 mx-auto col-md-5 col-sm-6 card border-0 m-4">
+                          <option>{Events.lieu}</option> 
+                        </option>)}
                   </select>
                 </div>
 
@@ -151,10 +127,14 @@ const contact = () => {
                     <p className="text-center">Formule choisie: <span className="selected-option">{selectedOption}</span></p>
                     <p className="text-center" style={{display:displayPlaceOption}}>Lieu: <span className="selected-option">{selectedPlace}</span></p>
                     <p className="text-center" style={{display:displayOccOption}}>Evénement: <span className="selected-option">{selectedEvent}</span></p>
+                    <p className="text-center">Prix à partir de:
+                        {filteredEvent.map(Events =>     
+                            <span className="selected-option" key={Events.id}>
+                              <p>{Events.prix}</p></span>)}</p>
                 </div>
 
               {/* Submit button  */}
-              <div className="d-flex justify-content-center">
+                <div className="d-flex justify-content-center">
                 <button type="submit" class="btn btn-block mb-4">Envoyer</button>
               </div>
           </form>
