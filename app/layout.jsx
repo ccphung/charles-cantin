@@ -1,4 +1,3 @@
-import './globals.css';
 import "../public/styles/bootstrap.min.css"
 import Nav from '@/components/Nav';
 
