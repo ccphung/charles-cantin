@@ -49,15 +49,15 @@ const contact = () => {
     ,[selectedOption]})
 
   return (<>
-  <div className="d-flex justify-content-center mx-auto">
+  <div className="d-flex justify-content-center mx-auto container">
+      <div className="row justify-content-center">
         <Image
           src="/images/portrait/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg"
           width={450}
           height={600}
-          className="card picture"
+          className="col-6 picture"
           alt="woman portrait"/>
-        <div className="row">
-          <div className="col-md-12 col-lg-12 col-sm-12 col-xs-8 p-3 card">
+          <div className="col-md-8 col-lg-4 col-sm-10">
             <h2 className="text-center">Nous contacter</h2>
             <form   action="https://formspree.io/f/xeqbpbor" method="POST">
               {/* Lastname input */}
@@ -138,8 +138,7 @@ const contact = () => {
           </form>
         </div>
     </div>
-</div>
-
+  </div>
 </>
   )
 }

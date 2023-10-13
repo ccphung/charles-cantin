@@ -1,6 +1,5 @@
 import './globals.css'
 import "../public/style/bootstrap.min.css"
-import ImportBsJS from "../components/importBsJS";
 import Nav from '@/components/Nav';
 
 export const metadata = {
@@ -18,7 +17,6 @@ const Rootlayout = ({children}) => {
       <link rel="icon" href="/images/logo/logo.png" sizes="any" />
       </head>
         <body>
-          <ImportBsJS />
           <Nav/>
           <main>
             {children}
