@@ -1,5 +1,5 @@
 import './globals.css'
-import "bootstrap/dist/css/bootstrap.min.css";
+import "../public/style/bootstrap.min.css"
 import ImportBsJS from "../components/importBsJS";
 import Nav from '@/components/Nav';
 
