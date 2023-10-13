@@ -1,4 +1,4 @@
-import './globals.css'
+import '../styles/globals.css'
 import "../public/style/bootstrap.min.css"
 import Nav from '@/components/Nav';
 
