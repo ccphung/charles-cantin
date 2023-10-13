@@ -1,5 +1,5 @@
-import '../styles/globals.css'
-import "../public/style/bootstrap.min.css"
+import '../public/styles/globals.css';
+import "../public/styles/bootstrap.min.css"
 import Nav from '@/components/Nav';
 
 export const metadata = {
