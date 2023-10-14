@@ -20,6 +20,8 @@ const Home = () => {
             color="white"
             alt="facebook logo"
           />
+
+          <img src="/public/images/logo/facebook.svg"></img>
           <Image
             src="../public/images/logo/instagram.svg"
             width={30}
