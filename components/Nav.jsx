@@ -10,7 +10,7 @@ const Nav = () => {
     
     <Link href="/" className="logo-link">
       <Image
-        src="/images/logo/logo.png"
+        src="/Images/Logo/logo.png"
         height="150"
         width="150"
         className="p-4 logo "
