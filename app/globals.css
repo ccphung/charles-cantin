@@ -230,6 +230,7 @@
         left: 40%;
         padding: 1px;
         margin: 1px;
+        margin-top: 3px;
     }
 } 
 
@@ -240,11 +241,13 @@
         animation: fadein 6s ease-in-out;
     }
 
-
-
     .link-nav  {
         position: relative;
-        left: 80%;
+        left: 45%;
+    }
+
+    .toggle-nav {
+        margin-top: 20px;
     }
 } 
 

@@ -26,7 +26,7 @@ const Navigation = () => {
       </Col>
     {/* Bootstrap navbar */}
      <Col>
-          <Navbar  sticky="top" expand="lg" className="bg">
+          <Navbar sticky="top" expand="lg" className="bg">
             <Container>
               <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-light toggle-nav"/>
               <Navbar.Collapse id="basic-navbar-nav">
@@ -42,7 +42,6 @@ const Navigation = () => {
         </Col>
       </Row>
     </Container>
-
   </>
   )
 }
