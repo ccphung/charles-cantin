@@ -7,7 +7,7 @@ export const metadata = {
     description: ''
 }
 
-const Rootlayout = ({children, pageProps}) => {
+const Rootlayout = ({children}) => {
   return (
     <html lang="fr">
       <head>

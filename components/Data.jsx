@@ -64,20 +64,6 @@ const Data =
             alt: "baptism picture"
         },
         {
-            id:10,
-            title:"Bapteme",
-            category:"baptème",
-            img: '/Images/Bapteme/sir-manuel-voYEWUm2Kac-unsplash.jpg',
-            alt: "baby dress"
-        },
-        {
-            id:11,
-            title:"Bapteme",
-            category:"baptème",
-            img: '/Images/Bapteme/walter-gadea-ZesabV4krEE-unsplash.jpg',
-            alt: "baptism picture"
-        },
-        {
             id:12,
             title:"Bapteme",
             category:"baptème",
@@ -92,13 +78,6 @@ const Data =
             alt: "baby picture"
         },
         {
-            id:14,
-            title:"bébé",
-            category:"bébé",
-            img: '/Images/Bebes/alvin-mahmudov-D3H1opzzq68-unsplash.jpg',
-            alt: "baby picture"
-        },
-        {
             id:15,
             title:"bébé",
             category:"bébé",
@@ -106,24 +85,10 @@ const Data =
             alt: "baby picture"
         },
         {
-            id:16,
-            title:"bébé",
-            category:"bébé",
-            img: '/Images/Bebes/christian-bowen-OJOE587CWuE-unsplash.jpg',
-            alt: "baby picture"
-        },
-        {
             id:17,
             title:"bébé",
             category:"bébé",
             img: '/Images/Bebes/colin-maynard-CEEhmAGpYzE-unsplash.jpg',
-            alt: "baby picture"
-        },
-        {
-            id:18,
-            title:"bébé",
-            category:"bébé",
-            img: '/Images/Bebes/jamie-coupaud-ee5oz3INPdI-unsplash.jpg',
             alt: "baby picture"
         },
         {
@@ -155,20 +120,6 @@ const Data =
             alt: "wedding picture"
         },
         {
-            id:23,
-            title:"Mariage",
-            category:"mariage",
-            img: '/Images/Mariage/ed-robertson-sqLVUTFtxVs-unsplash.jpg',
-            alt: "wedding flowers picture"
-        },
-        {
-            id:24,
-            title:"Mariage",
-            category:"mariage",
-            img: '/Images/Mariage/eugenivy_now-1Bs2sZ9fD2Q-unsplash.jpg',
-            alt: "wedding picture"
-        },
-        {
             id:25,
             title:"Mariage",
             category:"mariage",
@@ -187,13 +138,6 @@ const Data =
             title:"Mariage",
             category:"mariage",
             img: '/Images/Mariage/jakob-owens-jbaF5N0uO0k-unsplash.jpg',
-            alt: "wedding picture"
-        },
-        {
-            id:28,
-            title:"Mariage",
-            category:"mariage",
-            img: '/Images/Mariage/jeremy-wong-weddings-464ps_nOflw-unsplash.jpg',
             alt: "wedding picture"
         },
         {
@@ -218,20 +162,6 @@ const Data =
             alt: "wedding picture"
         },
         {
-            id:32,
-            title:"Mariage",
-            category:"mariage",
-            img: '/Images/Mariage/marc-a-sporys-NO8Sj4dKE8k-unsplash.jpg',
-            alt: "wedding shoes picture"
-        },
-        {
-            id:33,
-            title:"Couple",
-            category:"couple",
-            img: '/Images/Couple/allen-taylor-QW9W92SdJ54-unsplash.jpg',
-            alt: "Couple beach picture"
-        },
-        {
             id:34,
             title:"Couple",
             category:"couple",
@@ -239,32 +169,11 @@ const Data =
             alt: "Couple dancing picture"
         },
         {
-            id:35,
-            title:"Couple",
-            category:"couple",
-            img: '/Images/Couple/anthony-tran-LMcvt8Rew4c-unsplash.jpg',
-            alt: "Couple picture"
-        },
-        {
             id:36,
             title:"Couple",
             category:"couple",
             img: '/Images/Couple/candice-picard-vLENm-coX5Y-unsplash.jpg',
             alt: "Couple picture"
-        },
-        {
-            id:37,
-            title:"Couple",
-            category:"couple",
-            img: '/Images/Couple/carly-rae-hobbins-zNHOIzjJiyA-unsplash.jpg',
-            alt: "Couple picture"
-        },
-        {
-            id:38,
-            title:"Couple",
-            category:"couple",
-            img: '/Images/Couple/daniel-j-schwarz-YtY724tdl7Y-unsplash.jpg',
-            alt: "Couple sitting picture"
         },
         {
             id:40,
@@ -279,13 +188,6 @@ const Data =
             category:"famille",
             img: '/Images/Famille/jessica-rockowitz-6c4Uhhe68yQ-unsplash.jpg',
             alt:"family outside"
-        },
-        {
-            id:42,
-            title:"family",
-            category:"famille",
-            img: '/Images/Famille/kadyn-pierce-L203i9Xi_XE-unsplash.jpg',
-            alt:"family sitting house"
         },
         {
             id:43,
@@ -309,20 +211,6 @@ const Data =
             alt:"family picture"
         },
         {
-            id:46,
-            title:"family",
-            category:"famille",
-            img: '/Images/Famille/patricia-prudente-6UyWK8mDcWo-unsplash.jpg',
-            alt:"family at beach"
-        },
-        {
-            id:47,
-            title:"family",
-            category:"famille",
-            img: '/Images/Famille/tyler-nix-V3dHmb1MOXM-unsplash.jpg',
-            alt:"family at beach"
-        },
-        {
             id:48,
             title:"pregnancy",
             category:"grossesse",
@@ -334,12 +222,6 @@ const Data =
             title:"pregnancy",
             category:"grossesse",
             img: '/Images/Grossesse/apostolos-vamvouras-Cv7BQyI1G0I-unsplash.jpg',
-            alt:"pregnant woman"
-        },        {
-            id:50,
-            title:"pregnancy",
-            category:"grossesse",
-            img: '/Images/Grossesse/camylla-battani-son4VHt4Ld0-unsplash.jpg',
             alt:"pregnant woman"
         },
         {
@@ -357,24 +239,10 @@ const Data =
             alt:"pregnant woman"
         },
         {
-            id:53,
-            title:"pregnancy",
-            category:"grossesse",
-            img: '/Images/Grossesse/janko-ferlic-ZNVGL_Pcf74-unsplash.jpg',
-            alt:"pregnant woman"
-        },
-        {
             id:54,
             title:"pregnancy",
             category:"grossesse",
             img: '/Images/Grossesse/jonathan-borba-DeuF8cVTGBo-unsplash.jpg',
-            alt:"pregnant woman"
-        },
-        {
-            id:55,
-            title:"pregnancy",
-            category:"grossesse",
-            img: '/Images/Grossesse/jonathan-borba-y61WgsFToRk-unsplash.jpg',
             alt:"pregnant woman"
         },
         {
@@ -440,13 +308,6 @@ const Data =
             img: '/Images/Portrait/jake-nackos-IF9TK5Uy-KI-unsplash.jpg',
             alt: "man protrait"
         },       
-        {
-            id:66,
-            title:"Portrait",
-            category:"portrait",
-            img: '/Images/Portrait/jimmy-fermin-bqe0J0b26RQ-unsplash.jpg',
-            alt: "woman protrait"
-        },
         {
             id:67,
             title:"Portrait",
