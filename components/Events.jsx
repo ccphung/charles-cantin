@@ -59,13 +59,13 @@ const Events =
         },
         {   
             id:10,
-            category:"evenement",
+            category:"événement",
             lieu:"Mariage",
             prix : "160 euros"
         },
         {   
             id:11,
-            category:"evenement",
+            category:"événement",
             lieu:"Baptème",
         },
     ]

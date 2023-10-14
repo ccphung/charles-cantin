@@ -29,7 +29,7 @@ const contact = () => {
 
 /* Display the option menu and add require */
   useEffect(() => {
-    if(selectedOption !== "evenement"){
+    if(selectedOption !== "événement"){
       setDisplayPlaceOption('block')
       setRequiredPlace(true)
       setDisplayOccOption('none')
