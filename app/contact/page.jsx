@@ -93,13 +93,14 @@ const contact = () => {
                 </div>
 
                 {/* Select place option */}
+  
                 <div class="form-outline mb-3" style={{display:displayPlaceOption}}>
                   <select class="form-select" name="place-option" id="place-option" required={requiredPlace} onChange={handlePlaceChange}>
-                  <option value="" selected>Choisir le lieu...</option>
-                      {filteredEvent.map(Events =>     
-                        <option key={Events.id}>
-                          {Events.lieu}
-                        </option>)}
+                  <option value="" selected>Choisir le lieu... </option>
+                  {filteredEvent.map(Events =>   
+                  <option key={Events.id}> 
+                      {Events.lieu}
+                  </option>)}
                   </select>
                 </div>
 
@@ -107,9 +108,10 @@ const contact = () => {
                 <div class="form-outline mb-3" style={{display:displayOccOption}}>
                   <select class="form-select" name="event-option" id="event-option" required={requiredOcc} onChange={handleEventChange}>
                     <option value="" selected>Choisir l'événement</option>
-                    {filteredEvent.map(Events => <div key={Events.id}>
-                    {Events.lieu}
-                    </div>)}
+                    {filteredEvent.map(Events =>   
+                    <option key={Events.id}> 
+                      {Events.lieu}
+                    </option>)}
                   </select>
                 </div>
 
