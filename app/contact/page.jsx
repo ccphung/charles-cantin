@@ -88,28 +88,18 @@ const contact = () => {
                       <option value="famille">Famille</option>
                       <option value="grossesse">Il était une fois</option>
                       <option value="bébé">Mon bébé</option>
-                      <option value="evenement">J'immortalise l'événement</option>
+                      <option value="vénement">J'immortalise l'événement</option>
                   </select>
                 </div>
 
                 {/* Select place option */}
-                <div class="form-outline mb-3" style={{display:displayPlaceOption}}>
+                <div class="form-outline mb-3">
                   <select class="form-select" name="place-option" id="place-option" required={requiredPlace} onChange={handlePlaceChange}>
-                  <option value="" selected>Choisir le lieu...</option>
+                  <option value="" selected>Choisir {Events.category !== "evenement" ? "le lieu..." : "l'événement..."}</option>
                       {filteredEvent.map(Events =>     
                         <option key={Events.id}>
                           {Events.lieu}
                         </option>)}
-                  </select>
-                </div>
-
-                {/* Select occasion */}
-                <div class="form-outline mb-3" style={{display:displayOccOption}}>
-                  <select class="form-select" name="event-option" id="event-option" required={requiredOcc} onChange={handleEventChange}>
-                    <option value="" selected>Choisir l'événement</option>
-                    {filteredEvent.map(Events => <div key={Events.id}>
-                    {Events.lieu}
-                    </div>)}
                   </select>
                 </div>
 
