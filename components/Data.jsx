@@ -2,319 +2,249 @@ const Data =
     [
         {   
             id:1,
-            title:"bébé",
-            category:"bébé",
-            img: "Images/Bebes/jonathan-borba-CgWTqYxHEkg-unsplash.jpg",
-            alt: "baby picture"
+            title:"bapteme",
+            category:"baptème",
+            img: "Images/Bapteme/gabby-orcutt-crbxjQ4xisQ-unsplash.jpg",
+            alt: "baptism"
         },
-        {
+        {   
             id:2,
-            title:"bébé",
-            category:"bébé",
-            img: "/Images/Bebes/kin-li-N1wX5BJkzlU-unsplash.jpg",
-            alt: "baby picture"
+            title:"bapteme",
+            category:"baptème",
+            img: "Images/Bapteme/gardie-design-social-media-marketing-Nuau0vx6vk8-unsplash.jpg",
+            alt: "baptism"
         },
-        {
+        {   
             id:3,
-            title:"Bapteme",
+            title:"bapteme",
             category:"baptème",
-            img: "/Images/Bapteme/gabby-orcutt-crbxjQ4xisQ-unsplash.jpg",
-            alt: "baby picture"
+            img: "Images/Bapteme/jonathan-borba-oHB7VKdpHQM-unsplash.jpg",
+            alt: "baptism"
         },
-        {
+        {   
             id:4,
-            title:"Bapteme",
+            title:"bapteme",
             category:"baptème",
-            img: "/Images/Bapteme/gardie-design-social-media-marketing-Nuau0vx6vk8-unsplash.jpg",
-            alt: "baptism picture"
+            img: "Images/Bapteme/jonathan-borba-VCjhp_UHk2w-unsplash.jpg",
+            alt: "baptism"
         },
-        {
+        {   
             id:5,
-            title:"Bapteme",
+            title:"bapteme",
             category:"baptème",
-            img: '/Images/Bapteme/jonathan-borba-oHB7VKdpHQM-unsplash.jpg',
-            alt: "baby and mother picture"
+            img: "Images/Bapteme/josh-applegate-mjn1LcoU1Cw-unsplash.jpg",
+            alt: "baptism"
         },
-        {
+        {   
             id:6,
-            title:"Bapteme",
-            category:"baptème",
-            img: '/Images/Bapteme/jonathan-borba-VCjhp_UHk2w-unsplash.jpg',
-            alt: "baby and mother picture"
+            title:"bébé",
+            category:"bébé",
+            img: "Images/Bebes/alessandro-rossi-ld8Thc2ryuQ-unsplash.jpg",
+            alt: "baby picture"
         },
-        {
+        {   
             id:7,
-            title:"Bapteme",
-            category:"baptème",
-            img: '/Images/Bapteme/margarita-s-Mm6tn_vUPGg-unsplash.jpg',
-            alt: "baptism picture"
+            title:"bébé",
+            category:"bébé",
+            img: "Images/Bebes/alvin-mahmudov-D3H1opzzq68-unsplash.jpg",
+            alt: "baby picture"
         },
-        {
+        {   
             id:8,
-            title:"Bapteme",
-            category:"baptème",
-            img: '/Images/Bapteme/margarita-s-oXMsAOKwYW4-unsplash.jpg',
-            alt: "baptism picture"
+            title:"bébé",
+            category:"bébé",
+            img: "Images/Bebes/asmund-gimre-NrJA1TPi0P8-unsplash.jpg",
+            alt: "baby picture"
         },
-        {
+        {   
             id:9,
-            title:"Bapteme",
-            category:"baptème",
-            img: '/Images/Bapteme/petra-ticic-tWVnxEciOk0-unsplash.jpg',
-            alt: "baptism picture"
+            title:"bébé",
+            category:"bébé",
+            img: "Images/Bebes/benjamin-escher-fCGxVTfk0hc-unsplash.jpg",
+            alt: "baby picture"
         },
-        {
+        {   
+            id:10,
+            title:"bébé",
+            category:"bébé",
+            img: "Images/Bebes/british-baby-box-SKlpWmPjp3c-unsplash.jpg",
+            alt: "baby picture"
+        },
+        {   
+            id:11,
+            title:"couple",
+            category:"couple",
+            img: "Images/Couple/allen-taylor-QW9W92SdJ54-unsplash.jpg",
+            alt: "couple picture"
+        },
+        {   
             id:12,
-            title:"Bapteme",
-            category:"baptème",
-            img: '/Images/Bebes/kin-li-N1wX5BJkzlU-unsplash.jpg',
-            alt: "baby baptism picture"
+            title:"couple",
+            category:"couple",
+            img: "Images/Couple/alvin-mahmudov-VUMdDPNxTsg-unsplash.jpg",
+            alt: "couple picture"
         },
-        {
+        {   
             id:13,
-            title:"bébé",
-            category:"bébé",
-            img: '/Images/Bebes/alessandro-rossi-ld8Thc2ryuQ-unsplash.jpg',
-            alt: "baby picture"
+            title:"couple",
+            category:"couple",
+            img: "Images/Couple/anthony-tran-LMcvt8Rew4c-unsplash.jpg",
+            alt: "couple picture"
         },
-        {
+        {   
+            id:14,
+            title:"couple",
+            category:"couple",
+            img: "Images/Couple/candice-picard-vLENm-coX5Y-unsplash.jpg",
+            alt: "couple picture"
+        },
+        {   
             id:15,
-            title:"bébé",
-            category:"bébé",
-            img: '/Images/Bebes/brytny-com-C4rXIFSzEXk-unsplash.jpg',
-            alt: "baby picture"
+            title:"couple",
+            category:"couple",
+            img: "Images/Couple/carly-rae-hobbins-zNHOIzjJiyA-unsplash.jpg",
+            alt: "couple picture"
         },
-        {
+        {   
+            id:16,
+            title:"famille",
+            category:"famille",
+            img: "Images/Famille/hoi-an-photographer-DyhiB_wFifk-unsplash.jpg",
+            alt: "family picture"
+        },
+        {   
             id:17,
-            title:"bébé",
-            category:"bébé",
-            img: '/Images/Bebes/colin-maynard-CEEhmAGpYzE-unsplash.jpg',
-            alt: "baby picture"
+            title:"famille",
+            category:"famille",
+            img: "Images/Famille/jessica-rockowitz-6c4Uhhe68yQ-unsplash.jpg",
+            alt: "family picture"
         },
-        {
+        {   
+            id:18,
+            title:"famille",
+            category:"famille",
+            img: "Images/Famille/kadyn-pierce-L203i9Xi_XE-unsplash.jpg",
+            alt: "family picture"
+        },
+        {   
             id:19,
-            title:"bébé",
-            category:"bébé",
-            img: '/Images/Bebes/alessandro-rossi-ld8Thc2ryuQ-unsplash.jpg',
-            alt: "baby picture"
+            title:"famille",
+            category:"famille",
+            img: "Images/Famille/kadyn-pierce-oX9TTndhoTY-unsplash.jpg",
+            alt: "family picture"
         },
-        {
+        {   
             id:20,
-            title:"bébé",
-            category:"bébé",
-            img: '/Images/Bebes/janko-ferlic-qJVluHTPx7U-unsplash.jpg',
-            alt: "baby picture"
+            title:"famille",
+            category:"famille",
+            img: "Images/Famille/patricia-prudente-6UyWK8mDcWo-unsplash.jpg",
+            alt: "family picture"
         },
-        {
+        {   
             id:21,
-            title:"bébé",
-            category:"bébé",
-            img: '/Images/Bebes/jimmy-conover-kCMKAEVTdkM-unsplash.jpg',
-            alt: "baby picture"
+            title:"grossesse",
+            category:"grossesse",
+            img: "Images/Grossesse/alexander-krivitskiy-KtmF96NBO0Q-unsplash.jpg",
+            alt: "pregnancy picture"
         },
-        {
+        {   
             id:22,
-            title:"Mariage",
-            category:"mariage",
-            img: '/Images/Mariage/alvaro-cvg-mW8IZdX7n8E-unsplash.jpg',
-            alt: "wedding picture"
+            title:"grossesse",
+            category:"grossesse",
+            img: "Images/Grossesse/apostolos-vamvouras-Cv7BQyI1G0I-unsplash.jpg",
+            alt: "pregnancy picture"
         },
-        {
+        {   
+            id:23,
+            title:"grossesse",
+            category:"grossesse",
+            img: "Images/Grossesse/camylla-battani-son4VHt4Ld0-unsplash.jpg",
+            alt: "pregnancy picture"
+        },
+        {   
+            id:24,
+            title:"grossesse",
+            category:"grossesse",
+            img: "Images/Grossesse/dave-goudreau-wU1PW5b1DVk-unsplash.jpg",
+            alt: "pregnancy picture"
+        },
+        {   
             id:25,
-            title:"Mariage",
-            category:"mariage",
-            img: '/Images/Mariage/fabio-alves-BpeTaQozgN4-unsplash.jpg',
-            alt: "wedding picture"
+            title:"grossesse",
+            category:"grossesse",
+            img: "Images/Grossesse/devon-divine-adP0SsdMtMA-unsplash.jpg",
+            alt: "pregnancy picture"
         },
-        {
+        {   
             id:26,
-            title:"Mariage",
+            title:"mariage",
             category:"mariage",
-            img: '/Images/Mariage/foto-pettine-IfjHaIoAoqE-unsplash.jpg',
-            alt: "wedding picture"
+            img: "Images/Mariage/alvaro-cvg-mW8IZdX7n8E-unsplash.jpg",
+            alt: "wedding"
         },
-        {
+        {   
             id:27,
-            title:"Mariage",
+            title:"mariage",
             category:"mariage",
-            img: '/Images/Mariage/jakob-owens-jbaF5N0uO0k-unsplash.jpg',
-            alt: "wedding picture"
+            img: "Images/Mariage/ed-robertson-sqLVUTFtxVs-unsplash.jpg",
+            alt: "wedding"
         },
-        {
+        {   
+            id:28,
+            title:"mariage",
+            category:"mariage",
+            img: "Images/Mariage/eugenivy_now-1Bs2sZ9fD2Q-unsplash.jpg",
+            alt: "wedding"
+        },
+        {   
             id:29,
-            title:"Mariage",
+            title:"mariage",
             category:"mariage",
-            img: '/Images/Mariage/junior-reis-xMDo8y776uE-unsplash.jpg',
-            alt: "wedding night picture"
+            img: "Images/Mariage/fabio-alves-BpeTaQozgN4-unsplash.jpg",
+            alt: "wedding"
         },
-        {
+        {   
             id:30,
-            title:"Mariage",
+            title:"mariage",
             category:"mariage",
-            img: '/Images/Mariage/ksav-pun-EHAn0csi6-E-unsplash.jpg',
-            alt: "wedding back and white picture"
+            img: "Images/Mariage/foto-pettine-IfjHaIoAoqE-unsplash.jpg",
+            alt: "wedding"
         },
-        {
+        {   
             id:31,
-            title:"Mariage",
-            category:"mariage",
-            img: '/Images/Mariage/leonardo-miranda-dvF6s1H1x68-unsplash.jpg',
-            alt: "wedding picture"
+            title:"portrait",
+            category:"portrait",
+            img: "Images/Portrait/aiony-haust-3TLl_97HNJo-unsplash.jpg",
+            alt: "potray"
         },
-        {
+        {   
+            id:32,
+            title:"portrait",
+            category:"portrait",
+            img: "Images/Portrait/christopher-campbell-rDEOVtE7vOs-unsplash.jpg",
+            alt: "potray"
+        },
+        {   
+            id:33,
+            title:"portrait",
+            category:"portrait",
+            img: "Images/Portrait/edward-cisneros-_H6wpor9mjs-unsplash.jpg",
+            alt: "potray"
+        },
+        {   
             id:34,
-            title:"Couple",
-            category:"couple",
-            img: '/Images/Couple/alvin-mahmudov-VUMdDPNxTsg-unsplash.jpg',
-            alt: "Couple dancing picture"
-        },
-        {
-            id:36,
-            title:"Couple",
-            category:"couple",
-            img: '/Images/Couple/candice-picard-vLENm-coX5Y-unsplash.jpg',
-            alt: "Couple picture"
-        },
-        {
-            id:40,
-            title:"family",
-            category:"famille",
-            img: '/Images/Famille/hoi-an-photographer-DyhiB_wFifk-unsplash.jpg',
-            alt:"family in vietnam"
-        },
-        {
-            id:41,
-            title:"family",
-            category:"famille",
-            img: '/Images/Famille/jessica-rockowitz-6c4Uhhe68yQ-unsplash.jpg',
-            alt:"family outside"
-        },
-        {
-            id:43,
-            title:"family",
-            category:"famille",
-            img: '/Images/Famille/kadyn-pierce-oX9TTndhoTY-unsplash.jpg',
-            alt:"family picture"
-        },
-        {
-            id:44,
-            title:"family",
-            category:"famille",
-            img: '/Images/Famille/nathan-dumlao-Wr3comVZJxU-unsplash.jpg',
-            alt:"family picture"
-        },
-        {
-            id:45,
-            title:"family",
-            category:"famille",
-            img: '/Images/Famille/osarugue-igbinoba-4ardiyvfhTM-unsplash.jpg',
-            alt:"family picture"
-        },
-        {
-            id:48,
-            title:"pregnancy",
-            category:"grossesse",
-            img: '/Images/Grossesse/alexander-krivitskiy-KtmF96NBO0Q-unsplash.jpg',
-            alt:"pregnant woman"
-        },
-        {
-            id:49,
-            title:"pregnancy",
-            category:"grossesse",
-            img: '/Images/Grossesse/apostolos-vamvouras-Cv7BQyI1G0I-unsplash.jpg',
-            alt:"pregnant woman"
-        },
-        {
-            id:51,
-            title:"pregnancy",
-            category:"grossesse",
-            img: '/Images/Grossesse/devon-divine-adP0SsdMtMA-unsplash.jpg',
-            alt:"pregnant woman"
-        },
-        {
-            id:52,
-            title:"pregnancy",
-            category:"grossesse",
-            img: '/Images/Grossesse/janko-ferlic--pGlq8NKUto-unsplash.jpg',
-            alt:"pregnant woman"
-        },
-        {
-            id:54,
-            title:"pregnancy",
-            category:"grossesse",
-            img: '/Images/Grossesse/jonathan-borba-DeuF8cVTGBo-unsplash.jpg',
-            alt:"pregnant woman"
-        },
-        {
-            id:56,
-            title:"pregnancy",
-            category:"grossesse",
-            img: '/Images/Grossesse/kelly-sikkema-IE8KfewAp-w-unsplash.jpg',
-            alt:"Couple with "
-        },
-        {
-            id:57,
-            title:"pregnancy",
-            category:"grossesse",
-            img: '/Images/Grossesse/toa-heftiba-C-8uOz7GluA-unsplash.jpg',
-            alt:"pregnant "
-        },
-        {
-            id:58,
-            title:"Portrait",
+            title:"portrait",
             category:"portrait",
-            img: '/Images/Portrait/aiony-haust-3TLl_97HNJo-unsplash.jpg',
-            alt: "woman protrait"
+            img: "Images/Portrait/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg",
+            alt: "potray"
         },
-        {
-            id:59,
-            title:"Portrait",
+        {   
+            id:35,
+            title:"portrait",
             category:"portrait",
-            img: '/Images/Portrait/christopher-campbell-rDEOVtE7vOs-unsplash.jpg',
-            alt: "man protrait"
+            img: "Images/Portrait/imansyah-muhamad-putera-n4KewLKFOZw-unsplash.jpg",
+            alt: "potray"
         },
-        {
-            id:60,
-            title:"Portrait",
-            category:"portrait",
-            img: '/Images/Portrait/edward-cisneros-_H6wpor9mjs-unsplash.jpg',
-            alt: "woman protrait"
-        },
-        {
-            id:61,
-            title:"Portrait",
-            category:"portrait",
-            img: '/Images/Portrait/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg',
-            alt: "woman protrait"
-        },        {
-            id:62,
-            title:"Portrait",
-            category:"portrait",
-            img: '/Images/Portrait/imansyah-muhamad-putera-n4KewLKFOZw-unsplash.jpg',
-            alt: "woman protrait"
-        },
-
-        {
-            id:64,
-            title:"Portrait",
-            category:"portrait",
-            img: '/Images/Portrait/jack-finnigan-rriAI0nhcbc-unsplash.jpg',
-            alt: "man protrait"
-        },
-        {
-            id:65,
-            title:"Portrait",
-            category:"portrait",
-            img: '/Images/Portrait/jake-nackos-IF9TK5Uy-KI-unsplash.jpg',
-            alt: "man protrait"
-        },       
-        {
-            id:67,
-            title:"Portrait",
-            category:"portrait",
-            img: '/Images/Portrait/robert-godwin-cdksyTqEXzo-unsplash.jpg',
-            alt: "woman protrait"
-        }
     ]
 
 
