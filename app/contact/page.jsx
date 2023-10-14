@@ -88,7 +88,7 @@ const contact = () => {
                       <option value="famille">Famille</option>
                       <option value="grossesse">Il était une fois</option>
                       <option value="bébé">Mon bébé</option>
-                      <option value="vénement">J'immortalise l'événement</option>
+                      <option value="événement">J'immortalise l'événement</option>
                   </select>
                 </div>
 
