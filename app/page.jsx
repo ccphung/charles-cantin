@@ -14,14 +14,14 @@ const Home = () => {
 
     <div className="socials text-center">
           <Image
-            src="images/logo/facebook.svg"
+            src="../public/images/logo/facebook.svg"
             width={30}
             height={30}
             color="white"
             alt="facebook logo"
           />
           <Image
-            src="images/logo/instagram.svg"
+            src="../public/images/logo/instagram.svg"
             width={30}
             height={30}
             color="white"
