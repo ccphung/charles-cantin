@@ -169,7 +169,7 @@
 
 @keyframes fadeout {
     0%{
-        opacity: 00%;
+        opacity: 0%;
     }
 
     30%{
@@ -224,8 +224,13 @@
 
 @media (max-width: 800px){
     .static-text {
-        display: none;
+        position: fixed;
+        left: 50%;
+        animation: fadein 6s ease-in-out;
     }
+
+
+
     .link-nav  {
         position: relative;
         left: 80%;
@@ -235,7 +240,7 @@
 @media (max-width: 1000px){
     .link-nav  {
         position: relative;
-        left: 55%;
+        left: 40%;
         padding: 1px;
         margin: 1px;
     }

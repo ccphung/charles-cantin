@@ -11,31 +11,18 @@ header {
     max-width: 100vw;
 }
 
-.title-container {
+h2 {
     display:flex;
     justify-content: center;
     margin: 20px;
     color:#a57b3c;
+    flex-direction: row;
+    align-items: center;
 }
 
 .colored-text{
     color:#a57b3c;
 }
-
-/* --- Section --- */
-
-/* section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 60px;
-    padding-right: 60px;
-} */
-
-
-/* article{
-    display:flex;
-} */
-
 
 /* --- Buttons ---- */
 
@@ -52,7 +39,10 @@ header {
 /* --- Media Queries --- */
 
 @media screen and (max-width:1024px){
-    header{
-        display:none;
+    h2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

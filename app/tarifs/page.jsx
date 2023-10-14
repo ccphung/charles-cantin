@@ -10,7 +10,10 @@ const page = () => {
   <>
         <main>
             <div className="title-container">
-                <h2>Séance photo : Tarifs et prestations</h2>
+                <h2>
+                    <div>Séance photo: </div>
+                    <div> Tarifs et prestations</div>
+                </h2>
             </div>
 
             <Container>
