@@ -9,10 +9,16 @@
     position: relative;
 }
 
+#accueil,
+#galerie,
+#tarifs,
+#contact {
+    color :#a47630;
+}
+
 .link-nav {
     list-style: none;
     text-decoration: none;
-    color : #a57b3c;
     margin: 9px;
     letter-spacing: 3px;
     padding: 5px;
@@ -30,6 +36,24 @@
 .link-nav:hover{
     background:#a57b3c;
 }
+
+#accueil:hover{
+    color :white;
+}
+
+#galerie:hover{
+    color :white;
+}
+
+#tarifs:hover{
+    color :white;
+}
+
+
+#contact:hover {
+    color :white;
+}
+
 
 /* ---------- Home page ----------- */
 
