@@ -1,8 +1,11 @@
 "use client"
 import { useEffect, useState } from "react"
 import './contact.css'
-import Image from "next/image"
+import Image from "react-bootstrap/Image"
 import Events from "@/components/Events"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 
 const contact = () => {
 
@@ -49,15 +52,18 @@ const contact = () => {
     ,[selectedOption]})
 
   return (<>
-  <div className="d-flex justify-content-center mx-auto container">
-      <div className="row justify-content-center">
+    <Container>
+      <Row>
+        <Col lg={4} md={6}>
         <Image
+          className="card-img picture"
           src="/Images/Portrait/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg"
-          width={450}
-          height={600}
-          className="col-6 picture"
-          alt="woman portrait"/>
-          <div className="col-md-8 col-lg-4 col-sm-10">
+          alt="woman portrait"
+        />
+        </Col>
+
+
+        <Col lg={6} md={6}>
             <h2 className="text-center">Nous contacter</h2>
             <form   action="https://formspree.io/f/xeqbpbor" method="POST">
               {/* Lastname input */}
@@ -138,9 +144,9 @@ const contact = () => {
                 <button type="submit" class="btn btn-block mb-4">Envoyer</button>
               </div>
           </form>
-        </div>
-    </div>
-  </div>
+        </Col>
+      </Row>
+    </Container>
 </>
   )
 }

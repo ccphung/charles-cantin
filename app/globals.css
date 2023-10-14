@@ -218,7 +218,18 @@
     }
 
     .static-text {
-        left:50%
+        left:50%;
+        top: 65%;
+        
+    }
+} 
+
+@media (max-width: 1000px){
+    .link-nav  {
+        position: relative;
+        left: 40%;
+        padding: 1px;
+        margin: 1px;
     }
 } 
 
@@ -237,11 +248,4 @@
     }
 } 
 
-@media (max-width: 1000px){
-    .link-nav  {
-        position: relative;
-        left: 40%;
-        padding: 1px;
-        margin: 1px;
-    }
-} 
+
