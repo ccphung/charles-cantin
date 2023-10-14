@@ -4,14 +4,28 @@ import Link from "next/link"
 const Home = () => {
   return (
   <>
-  <section className="home-background">
-    <h1 className="title">Charles Cantin</h1>
+  <section>
+    {/* Background */}
+    <div>
+    <Image
+        src="/Images/Background/hisu-lee-FTW8ADj5igs-unsplash.jpg"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        priority="false"
+        className="home-background"
+          />
+    </div>
 
-    <div className="spin-wrapper">
+    {/* Title */}
+    <h1 className="title text-center">Charles Cantin</h1>
+
+    {/* Sub title  */}
+    <div className="spin-wrapper text-center">
       <span className="static-text">Photographe </span> <span className="dynamic-text"></span>
     </div>
 
-
+    {/* Socials */}
     <div className="socials text-center">
           <Image
             src="/Images/Logo/facebook.svg"

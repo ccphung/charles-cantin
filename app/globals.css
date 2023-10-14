@@ -20,6 +20,7 @@
     color : #a47630;
     margin: 9px;
     letter-spacing: 3px;
+    padding: 5px;
 }
 
 .link-nav:hover{
@@ -169,16 +170,8 @@
 
 /* background picture */
 .home-background {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #3F3D3B;
-    background-blend-mode: multiply;
-    position: absolute;
-    top:0%;
-    width: 100vw;
-    height: 100vh;
     z-index: 0;
+    filter: brightness(40%);
 }
 
 /* ------ Media Queries ------- */
@@ -190,7 +183,7 @@
     }
 
     .clickable-text{
-        visibility: hidden;
+        display: none;
     }
 
     .socials{
@@ -198,7 +191,7 @@
     }
 
     .dynamic-text {
-        visibility: hidden;
+        display: none;
     }
 
     .static-text {
@@ -206,3 +199,8 @@
     }
 } 
 
+@media (max-width: 800px){
+    .static-text {
+        display: none;
+    }
+} 
