@@ -25,7 +25,7 @@ const Data =
             id:4,
             title:"Bapteme",
             category:"baptème",
-            img: "/Images/Bapteme/gardie-design-social-media-marketing-Nuau0vx6vk8-unsplash.png",
+            img: "/Images/Bapteme/gardie-design-social-media-marketing-Nuau0vx6vk8-unsplash.jpg",
             alt: "baptism picture"
         },
         {
@@ -60,7 +60,8 @@ const Data =
             id:9,
             title:"Bapteme",
             category:"baptème",
-            img: '/Images/Bapteme/petra-ticic-tWVnxEciOk0-unsplash.jpg'
+            img: '/Images/Bapteme/petra-ticic-tWVnxEciOk0-unsplash.jpg',
+            alt: "baptism picture"
         },
         {
             id:10,
@@ -136,7 +137,8 @@ const Data =
             id:20,
             title:"bébé",
             category:"bébé",
-            img: '/Images/Bebes/janko-ferlic-qJVluHTPx7U-unsplash.jpg'
+            img: '/Images/Bebes/janko-ferlic-qJVluHTPx7U-unsplash.jpg',
+            alt: "baby picture"
         },
         {
             id:21,
