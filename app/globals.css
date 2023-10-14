@@ -30,7 +30,7 @@
 
 .toggle-nav{
     position: relative;
-    left: 80%;
+    left:55%;
 }
 
 .link-nav:hover{
@@ -235,6 +235,7 @@
 @media (max-width: 900px){
     .link-nav  {
         position: relative;
-        left: 80%;
+        left: 55%;
+        padding: 0px;
     }
 } 
