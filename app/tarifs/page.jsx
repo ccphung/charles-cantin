@@ -6,51 +6,8 @@ import Row from 'react-bootstrap/Row';
 import Image from "react-bootstrap/Image"
 
 const page = () => {
-  return (<>
-     <header>
-        <div className="photo-header-container">
-            <Image
-                src="/Images/Bapteme/walter-gadea-ZesabV4krEE-unsplash.jpg"
-                width={200}
-                height={150}
-            />
-            <Image
-                src="/Images/Bebes/jonathan-borba-CgWTqYxHEkg-unsplash.jpg"
-                width={200}
-                height={150}
-            />
-            <Image
-                src="/Images/Portrait/edward-cisneros-_H6wpor9mjs-unsplash.jpg"
-                width={200}
-                height={150}
-            />
-            <Image
-                src="/Images/Mariage/marc-a-sporys-NO8Sj4dKE8k-unsplash.jpg"
-                width={200}
-                height={150}
-            />
-            <Image
-                src="/Images/Grossesse/camylla-battani-son4VHt4Ld0-unsplash.jpg"
-                width={200}
-                height={150}
-            />
-            <Image
-                src="/Images/Couple/carly-rae-hobbins-zNHOIzjJiyA-unsplash.jpg"
-                width={200}
-                height={150}
-            />
-            <Image
-                src="/Images/Famille/nathan-dumlao-Wr3comVZJxU-unsplash.jpg"
-                width={200}
-                height={150}
-            />
-            <Image
-                src="/Images/Logo/logo.png"
-                width={200}
-                height={150}
-            />
-        </div>
-    </header>
+  return (
+  <>
         <main>
             <div className="title-container">
                 <h2>Séance photo : Tarifs et prestations</h2>
