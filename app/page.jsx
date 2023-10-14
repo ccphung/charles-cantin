@@ -16,6 +16,7 @@ const Home = () => {
         className="home-background"
           />
     </div>
+    
 
     {/* Title */}
     <h1 className="title text-center">Charles Cantin</h1>

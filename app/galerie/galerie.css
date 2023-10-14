@@ -9,7 +9,7 @@
 
 /*title*/
 h2 {
-    color: #976212;
+    color: #a57b3c;
     font-size: 3em;
     letter-spacing: 5px;
     font-family: 'Catamaran', sans-serif;
@@ -37,7 +37,7 @@ p {
 }
 
 .button-wrapper button:hover {
-    background:#976212;
+    background:#a57b3c;
     color: white;
     transition: 0.3s ease-in-out;
     border: 0px;

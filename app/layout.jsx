@@ -1,6 +1,6 @@
 import "../public/styles/bootstrap.min.css"
 import './globals.css'
-import Nav from '@/components/Nav';
+import Navigation from '@/components/Navigation';
 
 export const metadata = {
     title: "Charles Cantin Photographe",
@@ -17,7 +17,7 @@ const Rootlayout = ({children, pageProps}) => {
       <link rel="icon" href="/Images/Logo/logo.png" sizes="any" />
       </head>
         <body>
-          <Nav/>
+          <Navigation/>
           <main>
             {children}
           </main>

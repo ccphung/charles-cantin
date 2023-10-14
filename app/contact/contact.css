@@ -1,6 +1,6 @@
 /* Title */
 h2, .recap-text, .selected-option{
-    color: #a47630;
+    color: #a57b3c;
     font-family: 'Lustria', serif;
     font-weight: bold;
 }
@@ -13,13 +13,13 @@ form {
 
 /* Buttons */
 .btn {
-    background-color: #a47630;
+    background-color: #a57b3c;
     color: white;
 }
 
 .btn:hover {
     background: white;
-    color: #a47630;
+    color: #a57b3c;
 }
 
 

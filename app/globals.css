@@ -1,31 +1,34 @@
 /* -------- Navigation Component --------- */
-.nav-index, img{
-    z-index:10;
-}
-
-.navbar-menu {
-    font-family: 'Catamaran', sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1em;
+.navbar 
+{
+    z-index:120;
 }
 
 .logo-link {
-    z-index: 100;
+    z-index:100;
+    position: relative;
 }
 
 .link-nav {
     list-style: none;
     text-decoration: none;
-    color : #a47630;
+    color : #a57b3c;
     margin: 9px;
     letter-spacing: 3px;
     padding: 5px;
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;    
+}
+
+.toggle-nav{
+    position: relative;
+    left: 80%;
 }
 
 .link-nav:hover{
-    color : white;
-    background:#a47630;
+    background:#a57b3c;
 }
 
 /* ---------- Home page ----------- */
@@ -95,7 +98,7 @@
 /* Dynamic and static text "Photographe Mariage"*/
 .dynamic-text {
     font-size: 1.8em;
-    color : #a47630;
+    color : #a57b3c;
     font-family: 'Catamaran', sans-serif;
     padding: 5px;
     text-transform: uppercase;
@@ -177,10 +180,6 @@
 /* ------ Media Queries ------- */
 
 @media (max-width: 1200px){
-    .link-nav {
-        font-family: 'Catamaran', sans-serif;
-        text-transform: uppercase;
-    }
 
     .clickable-text{
         display: none;
@@ -202,5 +201,16 @@
 @media (max-width: 800px){
     .static-text {
         display: none;
+    }
+    .link-nav  {
+        position: relative;
+        left: 80%;
+    }
+} 
+
+@media (max-width: 900px){
+    .link-nav  {
+        position: relative;
+        left: 80%;
     }
 } 

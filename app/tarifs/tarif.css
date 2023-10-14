@@ -15,11 +15,11 @@ header {
     display:flex;
     justify-content: center;
     margin: 20px;
-    color:#a47630;
+    color:#a57b3c;
 }
 
 .colored-text{
-    color:#a47630;
+    color:#a57b3c;
 }
 
 /* --- Section --- */
@@ -46,7 +46,7 @@ article{
 
 .btn:hover {
     background: white;
-    color: #a47630;
+    color: #a57b3c;
 }
 
 /* --- Media Queries --- */
