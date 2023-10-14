@@ -14,7 +14,7 @@ const Home = () => {
 
     <div className="socials text-center">
           <Image
-            src="/public/Images/logo/facebook.svg"
+            src="/public/Images/Logo/facebook.svg"
             width={30}
             height={30}
             color="white"
