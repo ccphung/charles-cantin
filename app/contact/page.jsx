@@ -29,7 +29,7 @@ const contact = () => {
 
 /* Display the option menu and add require */
   useEffect(() => {
-    if(selectedOption !== "événement"){
+    if(selectedOption !== "evenement"){
       setDisplayPlaceOption('block')
       setRequiredPlace(true)
       setDisplayOccOption('none')
@@ -88,7 +88,7 @@ const contact = () => {
                       <option value="famille">Famille</option>
                       <option value="grossesse">Il était une fois</option>
                       <option value="bébé">Mon bébé</option>
-                      <option value="événement">J'immortalise l'événement</option>
+                      <option value="evenement">J'immortalise l'événement</option>
                   </select>
                 </div>
 
