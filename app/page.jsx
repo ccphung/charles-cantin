@@ -22,8 +22,8 @@ const Home = () => {
     <h1 className="title text-center">Charles Cantin</h1>
 
     {/* Sub title  */}
-    <div className="spin-wrapper text-center">
-      <span className="static-text">Photographe </span> <span className="dynamic-text"></span>
+    <div className="spin-wrapper">
+      <span className="static-text text-center">Photographe </span> <span className="dynamic-text"></span>
     </div>
 
     {/* Socials */}
