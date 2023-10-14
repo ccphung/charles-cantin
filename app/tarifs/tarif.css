@@ -24,17 +24,17 @@ header {
 
 /* --- Section --- */
 
-section{
+/* section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: 60px;
     padding-right: 60px;
-}
+} */
 
 
-article{
+/* article{
     display:flex;
-}
+} */
 
 
 /* --- Buttons ---- */
