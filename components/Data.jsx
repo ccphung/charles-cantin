@@ -4,28 +4,28 @@ const Data =
             id:1,
             title:"bébé",
             category:"bébé",
-            img: '/images/bebes/jonathan-borba-CgWTqYxHEkg-unsplash.jpg',
+            img: 'images/bebes/jonathan-borba-CgWTqYxHEkg-unsplash.jpg',
             alt: "baby picture"
         },
         {
             id:2,
             title:"bébé",
             category:"bébé",
-            img: '/images/bebes/kin-li-N1wX5BJkzlU-unsplash.jpg',
+            img: '/app/public/images/bebes/kin-li-N1wX5BJkzlU-unsplash.jpg',
             alt: "baby picture"
         },
         {
             id:3,
             title:"bapteme",
             category:"baptème",
-            img: '/images/bapteme/gabby-orcutt-crbxjQ4xisQ-unsplash.jpg',
+            img: '/../public/images/bapteme/gabby-orcutt-crbxjQ4xisQ-unsplash.jpg',
             alt: "baby picture"
         },
         {
             id:4,
             title:"bapteme",
             category:"baptème",
-            img: '/images/bapteme/gardie-design-social-media-marketing-Nuau0vx6vk8-unsplash.jpg',
+            img: '/images/bapteme/gardie-design-social-media-marketing-Nuau0vx6vk8-unsplash.png',
             alt: "baptism picture"
         },
         {
