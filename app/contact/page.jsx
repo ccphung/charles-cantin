@@ -52,7 +52,7 @@ const contact = () => {
   <div className="d-flex justify-content-center mx-auto container">
       <div className="row justify-content-center">
         <Image
-          src="/images/portrait/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg"
+          src="/Images/Portrait/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg"
           width={450}
           height={600}
           className="col-6 picture"
