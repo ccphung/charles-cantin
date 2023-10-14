@@ -14,7 +14,7 @@ const Rootlayout = ({children, pageProps}) => {
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lustria&display=swap" rel="stylesheet"/>
-      <link rel="icon" href="/images/logo/logo.png" sizes="any" />
+      <link rel="icon" href="/Images/Logo/logo.png" sizes="any" />
       </head>
         <body>
           <Nav/>
