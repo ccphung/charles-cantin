@@ -235,7 +235,7 @@
 @media (max-width: 1000px){
     .link-nav  {
         position: relative;
-        left: 55%;
+        left: 50%;
         padding: 1px;
         margin: 1px;
     }
