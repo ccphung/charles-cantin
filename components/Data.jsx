@@ -4,7 +4,7 @@ const Data =
             id:1,
             title:"bébé",
             category:"bébé",
-            src: '../public/images/bebes/jonathan-borba-CgWTqYxHEkg-unsplash.jpg',
+            src: 'public/images/bebes/jonathan-borba-CgWTqYxHEkg-unsplash.jpg',
             alt: "baby picture"
         },
         {
