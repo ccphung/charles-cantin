@@ -1,4 +1,5 @@
 import "../public/styles/bootstrap.min.css"
+import './pages/_app'
 import Nav from '@/components/Nav';
 
 export const metadata = {
@@ -6,7 +7,7 @@ export const metadata = {
     description: ''
 }
 
-const Rootlayout = ({children}) => {
+const Rootlayout = ({children, pageProps}) => {
   return (
     <html lang="fr">
       <head>
