@@ -232,10 +232,11 @@
     }
 } 
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
     .link-nav  {
         position: relative;
         left: 55%;
-        padding: 0px;
+        padding: 1px;
+        margin: 1px;
     }
 } 
