@@ -58,8 +58,6 @@
 /* ---------- Home page ----------- */
 
 /* Title */
-
-
 .title {
     font-family: 'Lustria', serif;
     color:white;
@@ -182,7 +180,6 @@
     
 }
 
-
 @keyframes fadein {
     0%{
         opacity: 0%;
@@ -193,7 +190,6 @@
     }
     
 }
-
 
 /* background picture */
 .home-background {
@@ -236,18 +232,37 @@
 
 @media (max-width: 800px){
     .static-text {
+        animation: fadein 6s ease-in-out;
         position: fixed;
         left: 50%;
-        animation: fadein 6s ease-in-out;
     }
 
     .link-nav  {
         position: relative;
-        left: 45%;
+        left: 20%;
     }
 
     .toggle-nav {
         margin-top: 20px;
+        left: 20%;
+    }
+} 
+
+@media (max-width: 400px){
+
+    .toggle-nav {
+        left: 40%;
+    }
+
+    .link-nav {
+        position: relative;
+        left: 30%;
+    }
+
+
+    .logo{
+        position: fixed;
+        left: 0%;
     }
 } 
 

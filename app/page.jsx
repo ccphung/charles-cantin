@@ -4,7 +4,7 @@ import Link from "next/link"
 const Home = () => {
   return (
   <>
-  <section>
+  <section className="home-page">
     {/* Background */}
     <div>
     <Image
