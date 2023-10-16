@@ -24,7 +24,7 @@ const Home = async({response}) => {
   <>
   <section className="home-page">
     {/* Background */}
-    <div>
+    {/* <div>
     <Image
         src={`http://127.0.0.1:1337${homes.data[0].attributes.background.data.attributes.url}`}
         layout="fill"
@@ -34,7 +34,7 @@ const Home = async({response}) => {
         className="home-background"
         alt="wedding picture"
           />
-    </div>
+    </div> */}
 
     {/* Title */}
     {/* <h1 className="title text-center">{homes.data[0].attributes.title}</h1> */}
