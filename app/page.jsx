@@ -2,6 +2,20 @@ import Image from "next/image"
 import Link from "next/link"
 import getHomeData from "./features/getHomeData"
 
+const getHomeData = async () =>  {
+  const reqOptions = {
+      headers: {
+        Authorization: `Bearer ${process.env.API_TOKEN}`,
+      },
+      cache: 'no-store'
+    };
+
+  const request = await fetch(`http://127.0.0.1:1337/api/homes?populate=*`, reqOptions)
+  const response = await request.json()
+
+  return response
+}
+
 const Home = async() => {
   const homes = await getHomeData()
   {console.log(homes.data[0].attributes)}
