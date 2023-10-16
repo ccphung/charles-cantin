@@ -3,7 +3,7 @@ import Link from "next/link"
 
 
 const getHomeData = async () =>  {
-  const request = await fetch(`${API_URL}/api/homes?populate=*`)
+  const request = await fetch(`${process.env.API_URL}/api/homes?populate=*`)
   const response = await request.json()
 
   return await response
