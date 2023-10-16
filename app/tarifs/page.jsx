@@ -9,7 +9,7 @@ import getPricingData from '../features/getPricingData';
 
 const page = async () => {
     const pricing = await getPricingData()
-    const prices = pricing.data
+    const prices = await pricing.data
   return (
   <>
   {console.log(prices[0].attributes.Image.data[0].attributes.url)}

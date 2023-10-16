@@ -4,6 +4,7 @@ const getHomeData = async () =>  {
         headers: {
           Authorization: `Bearer ${process.env.API_TOKEN}`,
         },
+        cache: 'no-store'
       };
 
     const request = await fetch(`http://127.0.0.1:1337/api/homes?populate=*`, reqOptions)
