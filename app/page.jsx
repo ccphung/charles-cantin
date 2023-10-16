@@ -4,18 +4,13 @@ import Link from "next/link"
 import useSWR from "swr";
 import axios from 'axios';
 
-<<<<<<< HEAD
-const url = 'http://127.0.0.1:1337/api/homes?populate=*'
-=======
->>>>>>> dev
 const fetcher = (url) => axios.get(url).then((res) => res.data);
-
 
 const Home = () => {
   const {data, error} = useSWR('http://127.0.0.1:1337/api/homes?populate=*', fetcher);
 
-  if (error) return <div>Error loading data...</div>;
-  if (!data) return <div>Loading...</div>;
+  if (error) return <div>Erreur de chargement...</div>;
+  if (!data) return <div>Chargement...</div>;
 
   console.log('data', data.data)
   return (
