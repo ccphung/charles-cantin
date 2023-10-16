@@ -1,5 +1,5 @@
 "use client"
-import './tarif.css'
+import '../../public/styles/tarif.css'
 import Link from "next/link"
 import Container from "react-bootstrap/Container"
 import Col  from "react-bootstrap/Col"
