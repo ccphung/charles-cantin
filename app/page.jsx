@@ -9,13 +9,14 @@ const getHomeData = async () =>  {
       cache: 'no-store',
     };
 
-  const response = await fetch(`http://127.0.0.1:1337/api/homes?populate=*`, reqOptions)
+  const request = await fetch(`http://127.0.0.1:1337/api/homes?populate=*`, reqOptions)
+  const response = await request.json()
 
   if(!response.ok) {
       throw new Error('failed to fetch data')
   }
 
-  return await response.json()
+  return await response
 }
 
 
