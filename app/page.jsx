@@ -37,25 +37,25 @@ const Home = async({response}) => {
     </div>
 
     {/* Title */}
-    <h1 className="title text-center">{homes.data[0].attributes.title}</h1>
+    {/* <h1 className="title text-center">{homes.data[0].attributes.title}</h1> */}
 
     {/* Sub title  */}
     <div className="spin-wrapper">
-      <span className="static-text text-center">{homes.data[0].attributes.subtitle}</span> 
+      {/* <span className="static-text text-center">{homes.data[0].attributes.subtitle}</span>  */}
       <span className="dynamic-text"></span>
     </div>
 
     {/* Socials */}
     <div className="socials text-center">
           <Image
-            src={`http://127.0.0.1:1337${homes.data[0].attributes.socials.data[0].attributes.url}`}
+            // src={`http://127.0.0.1:1337${homes.data[0].attributes.socials.data[0].attributes.url}`}
             width={30}
             height={30}
             color="white"
             alt="facebook logo"
           />
           <Image
-            src={`http://127.0.0.1:1337${homes.data[0].attributes.socials.data[1].attributes.url}`}
+            // src={`http://127.0.0.1:1337${homes.data[0].attributes.socials.data[1].attributes.url}`}
             width={30}
             height={30}
             color="white"
