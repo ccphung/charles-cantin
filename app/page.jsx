@@ -1,4 +1,4 @@
-import Image from "next/image"
+import  Image  from "react-bootstrap";
 import Link from "next/link"
 
 const getHomeData = async () =>  {

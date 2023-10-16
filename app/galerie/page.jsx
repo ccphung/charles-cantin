@@ -2,7 +2,7 @@
 import Data from "@/components/Data"
 import { useEffect, useState } from "react";
 import CategoryButton from "@/components/CategoryButton";
-import './galerie.css'
+import '../../public/styles/galerie.css'
 
 
 const page = () => {
