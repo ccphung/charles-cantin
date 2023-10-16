@@ -17,7 +17,7 @@ const getHomeData = async () =>  {
   return await response
 }
 
-const Home = async(homes) => {
+const Home = async() => {
   const homes = await getHomeData()
   return (
   <>
