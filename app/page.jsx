@@ -20,13 +20,14 @@ import Link from "next/link"
 const Home = async({response}) => {
   // const homes = await getHomeData()
 
+
   return (
   <>
   <section className="home-page">
     {/* Background */}
-    {/* <div>
+    <div>
     <Image
-        src={`http://127.0.0.1:1337${homes.data[0].attributes.background.data.attributes.url}`}
+        src={`http://127.0.0.1:1337${response.data[0].attributes.background.data.attributes.url}`}
         layout="fill"
         objectFit="cover"
         quality={100}
@@ -34,7 +35,7 @@ const Home = async({response}) => {
         className="home-background"
         alt="wedding picture"
           />
-    </div> */}
+    </div>
 
     {/* Title */}
     {/* <h1 className="title text-center">{homes.data[0].attributes.title}</h1> */}
