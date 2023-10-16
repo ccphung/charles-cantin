@@ -19,7 +19,6 @@ const page = async () => {
 
             <Container>
                 <Row>
-                {/* Portrait */}
                     {prices.map(price => (
                     <Col xs={12} md={6} lg={4}>
                           <div class="card m-3">
