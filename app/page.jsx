@@ -1,24 +1,25 @@
 import  Image  from "react-bootstrap/Image";
 import Link from "next/link"
 
-const getHomeData = async () =>  {
-  const reqOptions = {
-      headers: {
-        'Authorization': `Bearer ${process.env.API_TOKEN}`,
-        'Content-Type': 'application/json',
-      },
-      cache: 'no-store',
-      method: 'GET',
+// const getHomeData = async () =>  {
+//   const reqOptions = {
+//       headers: {
+//         'Authorization': `Bearer ${process.env.API_TOKEN}`,
+//         'Content-Type': 'application/json',
+//       },
+//       cache: 'no-store',
+//       method: 'GET',
 
-    };
+//     };
 
-  const request = await fetch(`http://127.0.0.1:1337/api/homes?populate=*`, reqOptions)
-  const response = await request.json()
-  return await response
-}
+//   const request = await fetch(`http://127.0.0.1:1337/api/homes?populate=*`, reqOptions)
+//   const response = await request.json()
+//   return await response
+// }
 
-const Home = async() => {
-  const homes = await getHomeData()
+const Home = async({response}) => {
+  // const homes = await getHomeData()
+
   return (
   <>
   <section className="home-page">
@@ -68,5 +69,36 @@ const Home = async() => {
   </>
   )
 }   
+Home.getInitialProps = async ctx => {
+  try {
+    // Parses the JSON returned by a network request
+    const parseJSON = resp => (resp.json ? resp.json() : resp);
+    // Checks if a network request came back fine, and throws an error if not
+    const checkStatus = resp => {
+      if (resp.status >= 200 && resp.status < 300) {
+        return resp;
+      }
+
+      return parseJSON(resp).then(resp => {
+        throw resp;
+      });
+    };
+
+    const headers = {
+      'Content-Type': 'application/json',
+    };
+
+    const response = await fetch('http://127.0.0.1:1337/api/homes?populate=*', {
+      method: 'GET',
+      headers,
+    })
+      .then(checkStatus)
+      .then(parseJSON);
+
+    return { response };
+  } catch (error) {
+    return { error };
+  }
+};
 
 export default Home
