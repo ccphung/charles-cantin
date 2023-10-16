@@ -1,8 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
+import config from "./config"
 
 const getHomeData = async () =>  {
-  const request = await fetch('http://127.0.0.1:1337/api/homes?populate=*')
+  const request = await fetch(`${config.api}/api/homes?populate=*`)
   const response = await request.json()
 
   return await response
