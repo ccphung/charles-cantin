@@ -8,7 +8,7 @@ import Image from "react-bootstrap/Image"
 const getPricingData = async () =>  {
     const reqOptions = {
         headers: {
-          Authorization: `Bearer ${process.env.API_TOKEN}`,
+          Authorization: `bearer ${process.env.API_TOKEN}`,
         },
         cache: 'no-store'
       };
