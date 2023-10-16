@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row';
 import Image from "react-bootstrap/Image"
 import getPricingData from '../features/getPricingData';
 
+export const runtime = 'edge'
+
 const page = async () => {
     const pricing = await getPricingData()
     const prices = pricing.data
