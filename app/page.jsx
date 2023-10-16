@@ -4,7 +4,7 @@ import Link from "next/link"
 const getHomeData = async () =>  {
   const reqOptions = {
       headers: {
-        Authorization: `bearer ${process.env.API_TOKEN}`,
+        'Authorization': `bearer ${process.env.API_TOKEN}`,
       },
       cache: 'no-store'
     };
