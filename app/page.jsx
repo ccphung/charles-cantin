@@ -4,7 +4,10 @@ import Link from "next/link"
 import useSWR from "swr";
 import axios from 'axios';
 
+<<<<<<< HEAD
 const url = 'http://127.0.0.1:1337/api/homes?populate=*'
+=======
+>>>>>>> dev
 const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 
