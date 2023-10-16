@@ -6,8 +6,7 @@ export const metadata = {
     title: "Charles Cantin Photographe",
     description: ''
 }
-
-const Rootlayout = ({children}) => {
+const Rootlayout = async ({children}) => {
   return (
     <html lang="fr">
       <head>
@@ -18,9 +17,9 @@ const Rootlayout = ({children}) => {
       </head>
         <body>
           <Navigation/>
-          <main>
-            {children}
-          </main>
+            <main>
+              {children}
+            </main>
         </body>
     </html>
   )
