@@ -12,7 +12,7 @@ const getHomeData = async () =>  {
   const request = await fetch(`http://127.0.0.1:1337/api/homes?populate=*`, reqOptions)
   const response = await request.json()
 
-  return response
+  return await response
 }
 
 const Home = async() => {
