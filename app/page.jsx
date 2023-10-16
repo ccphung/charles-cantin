@@ -4,21 +4,15 @@ import Link from "next/link"
 const getHomeData = async () =>  {
   const reqOptions = {
       headers: {
-        Authorization: `Bearer ${process.env.API_TOKEN}`,
+        Authorization: `bearer ${process.env.API_TOKEN}`,
       },
-      cache: 'no-store',
+      cache: 'no-store'
     };
 
   const request = await fetch(`http://127.0.0.1:1337/api/homes?populate=*`, reqOptions)
   const response = await request.json()
-
-  if(!response.ok) {
-      throw new Error('failed to fetch data')
-  }
-
   return await response
 }
-
 
 const Home = async() => {
   const homes = await getHomeData()
