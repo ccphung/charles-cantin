@@ -1,43 +1,46 @@
 import Image from "next/image"
 import Link from "next/link"
+import getHomeData from "./features/getHomeData"
 
-const Home = () => {
+const Home = async() => {
+  const homes = await getHomeData()
+  {console.log(homes.data[0].attributes)}
   return (
   <>
   <section className="home-page">
     {/* Background */}
     <div>
     <Image
-        src="/Images/Background/hisu-lee-FTW8ADj5igs-unsplash.jpg"
+        src={`http://127.0.0.1:1337${homes.data[0].attributes.background.data.attributes.url}`}
         layout="fill"
         objectFit="cover"
         quality={100}
         priority="false"
         className="home-background"
+        alt="wedding picture"
           />
     </div>
-    
 
     {/* Title */}
-    <h1 className="title text-center">Charles Cantin</h1>
+    <h1 className="title text-center">{homes.data[0].attributes.title}</h1>
 
     {/* Sub title  */}
     <div className="spin-wrapper">
-      <span className="static-text text-center">Photographe </span> <span className="dynamic-text"></span>
+      <span className="static-text text-center">{homes.data[0].attributes.subtitle}</span> 
+      <span className="dynamic-text"></span>
     </div>
 
     {/* Socials */}
     <div className="socials text-center">
           <Image
-            src="/Images/Logo/facebook.svg"
+            src={`http://127.0.0.1:1337${homes.data[0].attributes.socials.data[0].attributes.url}`}
             width={30}
             height={30}
             color="white"
             alt="facebook logo"
           />
-
           <Image
-            src="/Images/Logo/instagram.svg"
+            src={`http://127.0.0.1:1337${homes.data[0].attributes.socials.data[1].attributes.url}`}
             width={30}
             height={30}
             color="white"

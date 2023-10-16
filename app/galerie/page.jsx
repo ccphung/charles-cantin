@@ -1,6 +1,6 @@
 "use client"
 import Data from "@/components/Data"
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import CategoryButton from "@/components/CategoryButton";
 import './galerie.css'
 

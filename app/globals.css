@@ -249,7 +249,6 @@
 } 
 
 @media (max-width: 400px){
-
     .toggle-nav {
         left: 40%;
     }
@@ -259,9 +258,8 @@
         left: 30%;
     }
 
-
     .logo{
-        position: fixed;
+        position: relative;
         left: 0%;
     }
 } 
