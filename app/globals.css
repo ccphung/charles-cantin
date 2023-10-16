@@ -259,7 +259,7 @@
     }
 
     .logo{
-        position: fixed;
+        position: relative;
         left: 0%;
     }
 } 
