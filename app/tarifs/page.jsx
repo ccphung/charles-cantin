@@ -22,7 +22,7 @@ const page = async () => {
                     {prices.map(price => (
                     <Col xs={12} md={6} lg={4}>
                           <div class="card m-3">
-                          {/* <Image class="card-img-top" src={`http://127.0.0.1:1337${price.attributes.Image.data[0].attributes.url}`} alt="Card image cap"/> */}
+                          <Image class="card-img-top" src={`http://localhost:1337${price.attributes.Image.data[0].attributes.url}`} alt="Card image cap"/>
                           <div class="card-body">
                               <h5 class="card-title">{price.attributes.Option}<span className="colored-text">{price.attributes.Price}</span> </h5>
                               <p class="card-text">{price.attributes.Description}</p>
