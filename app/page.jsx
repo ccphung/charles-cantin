@@ -22,10 +22,12 @@ const Home = () => {
       <Image 
         src={`http://127.0.0.1:1337${data.data[0].attributes.background.data.attributes.url}`}
         alt="Wedding"
+        width={100}
+        height={100}
         layout="fill"
         objectFit="cover"
     />
-    
+
     {/* Title */}
     <h1 className="title text-center">{data.data[0].attributes.title}</h1>
 
