@@ -26,7 +26,9 @@ const Home = () => {
           height: "100vh",
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center'
+          justifyContent: 'center',
+          position:'fixed',
+          top:'0%'
         }}/>
 
     {/* Title */}
