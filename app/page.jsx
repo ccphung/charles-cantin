@@ -24,8 +24,6 @@ const Home = () => {
         src={`http://127.0.0.1:1337${data.data[0].attributes.background.data.attributes.url}`}
         layout="fill"
         objectFit="cover"
-        quality={100}
-        priority="false"
         className="home-background"
         alt="wedding picture"
           />
