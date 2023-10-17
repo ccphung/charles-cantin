@@ -6,9 +6,12 @@ import Events from "@/components/Events"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import useSWR from "swr";
+import axios from 'axios';
+
+const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 const contact = () => {
-
 	const handlePriceChange = (event) => {
 		setSelectedOption(event.target.value);
 	};
@@ -51,13 +54,19 @@ const contact = () => {
       setFilteredEvent(Events.filter(val => val.category === selectedOption))
     ,[selectedOption]})
 
+  const {data, error} = useSWR('http://127.0.0.1:1337/api/contacts?populate=*', fetcher);
+
+  if (error) return <div className="text-center">Erreur de chargement...</div>;
+  if (!data) return <div className="text-center">Chargement...</div>;
+  console.log(data.data[0].attributes.Photo)
   return (<>
+
     <Container>
       <Row>
         <Col lg={4} md={6}>
         <Image
           className="card-img picture"
-          src="/Images/Portrait/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg"
+          src={`http://127.0.0.1:1337${data.data[0].attributes.Photo.data.attributes.url}`}
           alt="woman portrait"
         />
         </Col>
@@ -99,7 +108,6 @@ const contact = () => {
                 </div>
 
                 {/* Select place option */}
-  
                 <div class="form-outline mb-3" style={{display:displayPlaceOption}}>
                   <select class="form-select" name="place-option" id="place-option" required={requiredPlace} onChange={handlePlaceChange}>
                   <option value="" selected>Choisir le lieu... </option>
@@ -139,7 +147,7 @@ const contact = () => {
                               <p>{Events.prix}</p></span>)}</p>
                 </div>
 
-              {/* Submit button  */}
+                {/* Submit button  */}
                 <div className="d-flex justify-content-center">
                 <button type="submit" class="btn btn-block mb-4">Envoyer</button>
               </div>
