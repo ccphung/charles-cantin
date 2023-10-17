@@ -1,10 +1,22 @@
 /* Title */
-h2, .recap-text, .selected-option{
+h2{
     color: #a57b3c;
-    font-family: 'Lustria', serif;
-    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-family: 'Catamaran', sans-serif;
+}
+.recap-text {
+    color: #26364F;
+    font-size: 2em;
+    font-family: 'Catamaran', sans-serif;
 }
 
+.selected-option {
+    color: #26364F;
+    font-size: 1.5em;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 200;
+}
 
 /* Form */
 form {

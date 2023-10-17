@@ -16,6 +16,8 @@ h2 {
     justify-content: center;
     margin: 20px;
     color:#a57b3c;
+    letter-spacing: 4px;
+    font-family: 'Catamaran', sans-serif;
     flex-direction: row;
     align-items: center;
 }
@@ -27,12 +29,14 @@ h2 {
 /* --- Buttons ---- */
 
 .btn {
-    background-color: #a47630;
-    color: white;
+    background: white;
+    color: #a57b3c;
+    border: 2px solid #a57b3c
 }
 
 .btn:hover {
-    background: white;
-    color: #a57b3c;
+    color: white;
+    background-color: #a47630;
+    transition: 0.5s;
 }
 
