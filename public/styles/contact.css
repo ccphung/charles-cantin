@@ -6,14 +6,14 @@ h2{
     font-family: 'Catamaran', sans-serif;
 }
 .recap-text {
-    color: #26364F;
+    color: #a57b3c;
     font-size: 2em;
     font-family: 'Catamaran', sans-serif;
 }
 
 .selected-option {
     color: #26364F;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: 'Catamaran', sans-serif;
     font-weight: 200;
 }
@@ -25,13 +25,16 @@ form {
 
 /* Buttons */
 .btn {
-    background-color: #a57b3c;
-    color: white;
+
+    background: white;
+    color: #a57b3c;
+    border-color: #a57b3c;
 }
 
 .btn:hover {
-    background: white;
-    color: #a57b3c;
+    background-color: #a57b3c;
+    color: white;
+    transition: 0.3s;
 }
 
 
