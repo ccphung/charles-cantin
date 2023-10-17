@@ -1,27 +1,58 @@
 "use client"
-import Data from "@/components/Data"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CategoryButton from "@/components/CategoryButton";
 import '../../public/styles/galerie.css'
+import useSWR from "swr";
+import axios from 'axios';
+import Image from "react-bootstrap/Image";
+import { Container, Col, Row } from "react-bootstrap";
 
+const fetcher = (url) => axios
+    .get(url)
+    .then((res) => res.data)
 
 const page = () => {
+  const [cat, setCat] = useState('tout');
+  
+  const {data, error} = useSWR('http://127.0.0.1:1337/api/photos?populate=*', fetcher);
 
-    const [cat, setCat] = useState('tout');
-    const [filteredData, setFilteredData] = useState([]);
+  if (error) return <div className="text-center">Erreur de chargement...</div>;
+  if (!data) return <div className="text-center">Chargement...</div>;
 
-    /* UseEffect to filter the data */
-    useEffect(() => {
-        cat === 'tout' ? setFilteredData(Data) : setFilteredData(Data.filter(val => val.category === cat))
-    },[cat])
+  const datas = data.data
+
+  // Retrieve pictures data
+  const picturesData = [
+    datas.map(data => (
+      [{
+        id:data.attributes.id,
+        alt:data.attributes.alt,
+        className:"w-100",
+        category:data.attributes.category,
+        title:data.attributes.title,
+        src:`http://127.0.0.1:1337${data.attributes.photo.data[0].attributes.url}`
+      },
+    ]
+    ))
+  ]
+
+  const pictures = picturesData[0]
+
+  // Filter on category
+  const dataFiltered = pictures.map( 
+  (picture => (picture[0])))
+  .filter(
+    choice => cat === 'tout' ? choice.category !=='' : choice.category === cat
+  )
 
   return (
   <>
+    {/* Header */}
     <div className="title-wrapper">
         <h2>Galerie</h2>
         <p>Découvrez quelques unes de mes photographies.</p>
     </div>
-    
+
     {/* Buttons */}
     <div className="button-wrapper">
       <CategoryButton name="tout" handleClick={setCat}/>
@@ -34,15 +65,22 @@ const page = () => {
       <CategoryButton name="grossesse" handleClick={setCat}/>
     </div>
 
-    {/* Pictures */}
-    <div className="container-fluid">
-      <div className="row m-5">
-          {filteredData.map(Data =>     
-            <div key={Data.id} className="d-flex justify-content-md-center col-lg-4 mx-auto col-md-5 col-sm-6 card border-0 m-4">
-                <img src={Data.img} className="w-100"/>
-            </div>)}
-      </div>
-    </div>
+    {/* Pictures   */}
+    <Container>
+      <Row>
+        {dataFiltered.map(data => (
+          <Col lg={4} md={6} xs={12}className="d-flex justify-content-md-center card border-0">
+            <Image
+              alt={data.alt}
+              className="w-100 m-2"
+              category={data.category}
+              title={data.title}
+              src={data.src}
+            />
+          </Col>
+          ))}
+      </Row>
+    </Container>
     </>
   )
 }

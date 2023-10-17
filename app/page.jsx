@@ -9,16 +9,16 @@ const fetcher = (url) => axios.get(url).then((res) => res.data);
 const Home = () => {
   const {data, error} = useSWR('http://127.0.0.1:1337/api/homes?populate=*', fetcher);
 
-  if (error) return <div>Erreur de chargement...</div>;
-  if (!data) return <div>Chargement...</div>;
+  if (error) return <div className="text-center">Erreur de chargement...</div>;
+  if (!data) return <div className="text-center">Chargement...</div>;
 
   console.log('data', data.data)
   return (
 
   <>
   <section className="home-page">
-    {/* Background */}
 
+    {/* Background */}
     <div>
     <Image
         src={`http://127.0.0.1:1337${data.data[0].attributes.background.data.attributes.url}`}
