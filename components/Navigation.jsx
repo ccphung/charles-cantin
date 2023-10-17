@@ -28,8 +28,8 @@ const Navigation = () => {
         <Link href="/" >
           <Image
             src={`http://127.0.0.1:1337${data.data[0].attributes.logo.data.attributes.url}`}
-            height={150}
-            width={150}
+            height="150px"
+            width="150px"
             className="p-4 logo card-img-top"
             alt="logo"
             /> 
