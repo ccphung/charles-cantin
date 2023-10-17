@@ -28,7 +28,8 @@ const Home = () => {
           alignItems: 'center',
           justifyContent: 'center',
           position:'fixed',
-          top:'0%'
+          top:'0%',
+          filter: 'brightness(90%)'
         }}/>
 
     {/* Title */}

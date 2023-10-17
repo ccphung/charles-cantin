@@ -111,12 +111,6 @@
     cursor: pointer;
 }
 
-.spin-wrapper {
-    position: absolute;
-    top: 60%;
-    left:42%;
-}
-
 /* Dynamic and static text "Photographe Mariage"*/
 .dynamic-text {
     font-size: 1.8em;
@@ -131,6 +125,10 @@
 .dynamic-text:after {
     content:"";
     animation: spin 15s infinite;
+    position: absolute;
+    top: 68%;
+    left:50%;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -139,6 +137,10 @@
     color:white;
     transform: translate(-50%, -50%);
     font-size: 1.5em;
+    position: absolute;
+    top: 61%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Animation */ 
