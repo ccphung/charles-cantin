@@ -26,9 +26,19 @@ h2 {
     color:#a57b3c;
 }
 
-/* --- Buttons ---- */
+/* --- Card ---- */
 
-.btn {
+h5{
+    font-family:'Lustria', serif;
+    color:#26364F;
+    font-weight: bold;
+}
+
+p{
+    font-family:'Lustria', serif;
+}
+
+.btn{
     background: white;
     color: #a57b3c;
     border: 2px solid #a57b3c

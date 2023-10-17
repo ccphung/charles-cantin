@@ -20,6 +20,7 @@ p {
     font-size: 1.5em;
     margin: 10px;
     color:#26364F;
+    font-family:'Lustria', serif;
 }
 
 /* ---- Buttons ---- */
@@ -36,6 +37,7 @@ p {
     letter-spacing: 4px;
     font-family: 'Catamaran', sans-serif;
     border : 1px #976212 solid;
+    color:#a57b3c;
 }
 
 .button-wrapper button:hover {
@@ -53,5 +55,9 @@ p {
         display: block;
         text-align: center;
         margin: auto;
+    }
+
+    button {
+        margin: 2px;
     }
 }
