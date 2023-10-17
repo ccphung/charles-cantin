@@ -6,8 +6,17 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Col from "react-bootstrap/Col";
+import useSWR from "swr";
+import axios from 'axios';
+
+const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 const Navigation = () => {
+  const {data, error} = useSWR('http://127.0.0.1:1337/api/navigations?populate=*', fetcher);
+
+
+  if (error) return <div className="text-center">Erreur de chargement...</div>;
+  if (!data) return <div className="text-center">Chargement...</div>;
 
   return (
     <>
@@ -18,10 +27,11 @@ const Navigation = () => {
       <Col>
         <Link href="/" >
           <Image
-            src="/Images/Logo/logo.png"
-            height="150"
-            width="150"
+            src={`http://127.0.0.1:1337${data.data[0].attributes.logo.data.attributes.url}`}
+            height={150}
+            width={150}
             className="p-4 logo "
+            alt="logo"
             /> 
         </Link>
       </Col>
@@ -33,16 +43,16 @@ const Navigation = () => {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                   <Nav.Link href="/" className="link-nav" id="accueil">
-                    Accueil
+                    {data.data[0].attributes.menu1}
                     </Nav.Link>
                   <Nav.Link href="galerie" className="link-nav" id="galerie">
-                    Galerie
+                    {data.data[0].attributes.menu2}
                     </Nav.Link>
                   <Nav.Link href="tarifs" className="link-nav" id="tarifs">
-                    Tarifs
+                    {data.data[0].attributes.menu3}
                     </Nav.Link>
                   <Nav.Link href="contact" className="link-nav" id="contact">
-                    Contact
+                    {data.data[0].attributes.menu4}
                     </Nav.Link>
                 </Nav>
               </Navbar.Collapse>

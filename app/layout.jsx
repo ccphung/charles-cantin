@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 
 export const metadata = {
     title: "Charles Cantin Photographe",
-    description: ''
+    description: 'Photographe mariage, couple, famille, portrait, bébé, baptème et grossesse'
 }
 const Rootlayout = async ({children}) => {
   return (
