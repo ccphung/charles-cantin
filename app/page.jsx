@@ -19,15 +19,13 @@ const Home = () => {
   <section className="home-page">
 
     {/* Background */}
-    <Image
+      <Image 
         src={`http://127.0.0.1:1337${data.data[0].attributes.background.data.attributes.url}`}
-        className="home-background"
-        alt="wedding picture"
-        objectFit="cover"
+        alt="Wedding"
         layout="fill"
-        objectPosition="center"
-          />
-
+        objectFit="cover"
+    />
+    
     {/* Title */}
     <h1 className="title text-center">{data.data[0].attributes.title}</h1>
 
