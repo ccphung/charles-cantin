@@ -191,12 +191,6 @@
     
 }
 
-/* background picture */
-.home-background {
-    z-index: 0;
-    filter: brightness(40%);
-}
-
 /* ------ Media Queries ------- */
 
 @media (max-width: 1200px){

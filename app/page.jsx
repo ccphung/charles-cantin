@@ -16,15 +16,18 @@ const Home = () => {
   return (
 
   <>
-  <section className="home-page">
-
     {/* Background */}
-      <Image 
-        src={`http://127.0.0.1:1337${data.data[0].attributes.background.data.attributes.url}`}
-        alt="Wedding"
-        width={100}
-        height={100}
-    />
+    <div style = {{
+          backgroundImage:`url("http://127.0.0.1:1337${data.data[0].attributes.background.data.attributes.url}")`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          width: "100vw",
+          height: "100vh",
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}/>
 
     {/* Title */}
     <h1 className="title text-center">{data.data[0].attributes.title}</h1>
@@ -55,7 +58,6 @@ const Home = () => {
       <Link href="/galerie">
         <div className="clickable-text text-center">Découvrir</div>
       </Link>
-    </section>
   </>
   )
 }   
