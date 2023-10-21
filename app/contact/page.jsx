@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useState } from "react"
-import '../../public/styles/contact.css'
+import './contact.css'
 import Image from "react-bootstrap/Image"
 import Events from "@/components/Events"
 import Container from "react-bootstrap/Container"

@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import CategoryButton from "@/components/CategoryButton";
-import '../../public/styles/galerie.css'
+import './galerie.css'
 import useSWR from "swr";
 import axios from 'axios';
 import Image from "react-bootstrap/Image";
