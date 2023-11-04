@@ -44,7 +44,7 @@ const Home = () => {
     {/* Socials */}
     <div className="socials text-center">
           <Image
-            src={`http://127.0.0.1:1337${data.data[0].attributes.socials.data[0].attributes.url}`}
+            src={`https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/${data.data[0].attributes.socials.data[0].attributes.url}`}
             width={30}
             height={30}
             color="white"
