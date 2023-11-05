@@ -14,7 +14,7 @@ const fetcher = (url) => axios
 const page = () => {
   const [cat, setCat] = useState('tout');
   
-  const {data, error} = useSWR('http://127.0.0.1:1337/api/photos?populate=*', fetcher);
+  const {data, error} = useSWR('https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/api/photos?populate=*', fetcher);
 
   if (error) return <div className="text-center">Erreur de chargement...</div>;
   if (!data) return <div className="text-center">Chargement...</div>;
@@ -30,7 +30,7 @@ const page = () => {
         className:"w-100",
         category:data.attributes.category,
         title:data.attributes.title,
-        src:`http://127.0.0.1:1337${data.attributes.photo.data[0].attributes.url}`
+        src:`https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com${data.attributes.photo.data[0].attributes.url}`
       },
     ]
     ))

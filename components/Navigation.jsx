@@ -12,7 +12,7 @@ import axios from 'axios';
 const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 const Navigation = () => {
-  const {data, error} = useSWR('http://127.0.0.1:1337/api/navigations?populate=*', fetcher);
+  const {data, error} = useSWR('https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/api/navigations?populate=*', fetcher);
 
 
   if (error) return <div className="text-center">Erreur de chargement...</div>;
@@ -27,7 +27,7 @@ const Navigation = () => {
       <Col>
         <Link href="/" >
           <Image
-            src={`http://127.0.0.1:1337${data.data[0].attributes.logo.data.attributes.url}`}
+            src={`https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com${data.data[0].attributes.logo.data.attributes.url}`}
             height="150px"
             width="150px"
             className="p-4 logo"

@@ -7,7 +7,7 @@ import axios from 'axios';
 const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 const Home = () => {
-  const {data, error} = useSWR('http://127.0.0.1:1337/api/homes?populate=*', fetcher);
+  const {data, error} = useSWR('https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/api/homes?populate=*', fetcher);
 
   if (error) return <div className="text-center">Erreur de chargement...</div>;
   if (!data) return <div className="text-center">Chargement...</div>;
@@ -18,7 +18,7 @@ const Home = () => {
   <>
     {/* Background */}
     <div style = {{
-          backgroundImage:`url("http://127.0.0.1:1337${data.data[0].attributes.background.data.attributes.url}")`,
+          backgroundImage:`url("https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/${data.data[0].attributes.background.data.attributes.url}")`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -51,7 +51,7 @@ const Home = () => {
             alt="facebook logo"
           />
           <Image
-            src={`http://127.0.0.1:1337${data.data[0].attributes.socials.data[1].attributes.url}`}
+            src={`https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/${data.data[0].attributes.socials.data[1].attributes.url}`}
             width={30}
             height={30}
             color="white"
