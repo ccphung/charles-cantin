@@ -9,7 +9,14 @@ import Col from "react-bootstrap/Col"
 import useSWR from "swr";
 import axios from 'axios';
 
-const fetcher = (url) => axios.get(url).then((res) => res.data);
+const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/contacts?populate=*`;
+const authHeader = {
+  headers: {
+    Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+  },
+};
+
+const fetcher = (apiUrl) => axios.get(apiUrl, authHeader).then((res) => res.data);
 
 const contact = () => {
 	const handlePriceChange = (event) => {
@@ -54,7 +61,7 @@ const contact = () => {
       setFilteredEvent(Events.filter(val => val.category === selectedOption))
     ,[selectedOption]})
 
-  const {data, error} = useSWR('https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/api/contacts?populate=*', fetcher);
+  const {data, error} = useSWR(apiUrl, fetcher);
 
   if (error) return <div className="text-center">Erreur de chargement...</div>;
   if (!data) return <div className="text-center">Chargement...</div>;

@@ -14,7 +14,7 @@ const authHeader = {
   },
 };
 
-const fetcher = (url) => axios.get(url, authHeader).then((res) => res.data);
+const fetcher = (apiUrl) => axios.get(apiUrl, authHeader).then((res) => res.data);
 
 const page = () => {
   const [cat, setCat] = useState('tout');

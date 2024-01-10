@@ -4,7 +4,7 @@ import Link from "next/link"
 import useSWR from "swr";
 import axios from 'axios';
 
-const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/photos?populate=*`;
+const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/homes?populate=*`;
 const authHeader = {
   headers: {
     Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
