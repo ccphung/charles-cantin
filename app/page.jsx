@@ -19,13 +19,13 @@ const Home = () => {
   if (error) return <div className="text-center">Erreur de chargement...</div>;
   if (!data) return <div className="text-center">Chargement...</div>;
 
-  console.log('data', data.data)
+  console.log('data', data.data[0].attributes)
   return (
 
   <>
     {/* Background */}
     <div style = {{
-          backgroundImage:`url("https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/${data.data[0].attributes.background.data.attributes.url}")`,
+          backgroundImage:`url("https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com${data.data[0].attributes.background.data.attributes.url}")`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
