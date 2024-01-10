@@ -7,15 +7,9 @@ import axios from 'axios';
 import Image from "react-bootstrap/Image";
 import { Container, Col, Row } from "react-bootstrap";
 
-const fetcherWithToken = (url, token) => {
-  const authHeader = {
-    headers: {
-      Authorization: `Bearer ${token}`
-    }
-  };
-
-  return axios.get(url, authHeader).then((res) => res.data);
-};
+const fetcher = (url) => axios
+    .get(url)
+    .then((res) => res.data)
 
 const page = () => {
   const [cat, setCat] = useState('tout');
