@@ -8,9 +8,9 @@ import Image from "react-bootstrap/Image";
 import { Container, Col, Row } from "react-bootstrap";
 
 const url = `${process.env.NEXT_PUBLIC_API_URL}`;
-const auth = `${process.env.NEXT_PUBLIC_API_TOKEN}`;
+const auth = `${process.env.NEXT_PUBLIC_API_TOKEN}/photos?populate=*`;
 
-const fetcher = (url) => axios
+const fetcher = (url) => await.axios
     .get(url, {
       headers: {
         Authorization: `Bearer ${auth}`
