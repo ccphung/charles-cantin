@@ -21,7 +21,7 @@ const fetcherWithToken = (url, token) => {
 };
 
 const page = () => {
-  const accessToken = process.env.API_TOKEN;
+  const accessToken = process.env.NEXT_PUBLIC_API_TOKEN;
 
   const { data, error } = useSWR(
     'https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/api/pricings?populate=*',
