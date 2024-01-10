@@ -7,7 +7,7 @@ import axios from 'axios';
 import Image from "react-bootstrap/Image";
 import { Container, Col, Row } from "react-bootstrap";
 
-const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/photos?populate=*`;
 const authHeader = {
   headers: {
     Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
