@@ -9,10 +9,26 @@ import useSWR from "swr";
 import axios from 'axios';
 
 // Fetching the data from Strapi
-const fetcher = (url) => axios.get(url).then((res) => res.data);
+const fetcherWithToken = (url, token) => {
+  // Utilisation du token dans l'en-tête Authorization
+  const authHeader = {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  };
+
+  return axios.get(url, authHeader).then((res) => res.data);
+};
 
 const page = () => {
-  const {data, error} = useSWR('https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/api/pricings?populate=*', fetcher);
+  // Remplacez 'votreToken' par votre token réel
+  const accessToken = process.env.API_TOKEN;
+
+  const { data, error } = useSWR(
+    'https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/api/pricings?populate=*',
+    () => fetcherWithToken('https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/api/pricings?populate=*', accessToken)
+  );
+
 
   if (error) return <div>Erreur de chargement...</div>;
   if (!data) return <div>Chargement...</div>;
