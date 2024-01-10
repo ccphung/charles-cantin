@@ -1,4 +1,6 @@
 "use client"
+import dotenv from 'dotenv';
+dotenv.config();
 import './tarif.css'
 import Link from "next/link"
 import Container from "react-bootstrap/Container"
@@ -8,9 +10,9 @@ import Image from "react-bootstrap/Image";
 import useSWR from "swr";
 import axios from 'axios';
 
+
 // Fetching the data from Strapi
 const fetcherWithToken = (url, token) => {
-  // Utilisation du token dans l'en-tête Authorization
   const authHeader = {
     headers: {
       Authorization: `Bearer ${token}`
@@ -21,8 +23,8 @@ const fetcherWithToken = (url, token) => {
 };
 
 const page = () => {
-  // Remplacez 'votreToken' par votre token réel
-  const accessToken = process.env.API_TOKEN;
+  const accessToken = process.env.NEXT_PUBLIC_API_TOKEN;
+  console.log("AccessToken:", accessToken);
 
   const { data, error } = useSWR(
     'https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/api/pricings?populate=*',
@@ -47,11 +49,11 @@ const page = () => {
             <Row>
                 {datas.map(data => (
                 <Col xs={12} md={6} lg={4}>
-                      <div class="card m-3">
-                      <Image class="card-img-top" src={`https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com${data.attributes.Image.data[0].attributes.url}`} alt="Card image cap"/>
-                      <div class="card-body">
-                          <h5 class="card-title">{data.attributes.Option}<span className="colored-text">{data.attributes.Price}</span> </h5>
-                          <p class="card-text">{data.attributes.Description}</p>
+                      <div className="card m-3">
+                      <Image className="card-img-top" src={`https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com${data.attributes.Image.data[0].attributes.url}`} alt="Card image cap"/>
+                      <div className="card-body">
+                          <h5 className="card-title">{data.attributes.Option}<span className="colored-text">{data.attributes.Price}</span> </h5>
+                          <p className="card-text">{data.attributes.Description}</p>
                           <Link href="\contact"><button className="btn">{data.attributes.Button}</button></Link>
                       </div>
                   </div>
