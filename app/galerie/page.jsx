@@ -7,22 +7,19 @@ import axios from 'axios';
 import Image from "react-bootstrap/Image";
 import { Container, Col, Row } from "react-bootstrap";
 
-const url = `${process.env.NEXT_PUBLIC_API_URL}`;
-const auth = `${process.env.NEXT_PUBLIC_API_TOKEN}/photos?populate=*`;
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+const authHeader = {
+  headers: {
+    Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+  },
+};
 
-async function fetcher(url) {
-  const response = await axios.get(url, {
-    headers: {
-      Authorization: `Bearer ${auth}`,
-    },
-  });
-  return response.data.data;
-}
+const fetcher = (url) => axios.get(url, authHeader).then((res) => res.data);
 
 const page = () => {
   const [cat, setCat] = useState('tout');
   
-  const {data, error} = useSWR(url, fetcher);
+  const {data, error} = useSWR(apiUrl, fetcher);
 
   if (error) return <div className="text-center">Erreur de chargement...</div>;
   if (!data) return <div className="text-center">Chargement...</div>;
