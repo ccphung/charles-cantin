@@ -19,7 +19,7 @@ const Home = () => {
   if (error) return <div className="text-center">Erreur de chargement...</div>;
   if (!data) return <div className="text-center">Chargement...</div>;
 
-  console.log('data', data.data[0].attributes)
+ 
   return (
 
   <>
@@ -51,14 +51,14 @@ const Home = () => {
     {/* Socials */}
     <div className="socials text-center">
           <Image
-            src={`https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/${data.data[0].attributes.socials.data[0].attributes.url}`}
+            src={`https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com${data.data[0].attributes.socials.data[0].attributes.url}`}
             width={30}
             height={30}
             color="white"
             alt="facebook logo"
           />
           <Image
-            src={`https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com/${data.data[0].attributes.socials.data[1].attributes.url}`}
+            src={`https://charles-cantin-strapi-01d205b7c2c1.herokuapp.com${data.data[0].attributes.socials.data[1].attributes.url}`}
             width={30}
             height={30}
             color="white"

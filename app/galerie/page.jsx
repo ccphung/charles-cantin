@@ -14,6 +14,7 @@ const authHeader = {
   },
 };
 
+
 const fetcher = (apiUrl) => axios.get(apiUrl, authHeader).then((res) => res.data);
 
 const page = () => {
@@ -24,8 +25,10 @@ const page = () => {
   if (error) return <div className="text-center">Erreur de chargement...</div>;
   if (!data) return <div className="text-center">Chargement...</div>;
 
-  const datas = data.data
 
+
+  const datas = data.data
+  console.log('data', data);
   // Retrieve pictures data
   const picturesData = [
     datas.map(data => (
