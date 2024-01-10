@@ -10,13 +10,14 @@ import { Container, Col, Row } from "react-bootstrap";
 const url = `${process.env.NEXT_PUBLIC_API_URL}`;
 const auth = `${process.env.NEXT_PUBLIC_API_TOKEN}/photos?populate=*`;
 
-const fetcher = (url) => await.axios
-    .get(url, {
-      headers: {
-        Authorization: `Bearer ${auth}`
-      }
-    })
-    .then((res) => res.data)
+async function fetcher(url) {
+  const response = await axios.get(url, {
+    headers: {
+      Authorization: `Bearer ${auth}`,
+    },
+  });
+  return response.data.data;
+}
 
 const page = () => {
   const [cat, setCat] = useState('tout');
